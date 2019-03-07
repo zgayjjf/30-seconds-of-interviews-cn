@@ -1,12 +1,12 @@
-### What is Big O Notation?
+### 什么是大O符号？
 
 #### Answer
 
-Big O notation is used in Computer Science to describe the time complexity of an algorithm. The best algorithms will execute the fastest and have the simplest complexity.
+大O符号用于在计算机科学中描述一个算法的时间复杂度。最好的算法会执行得最快并且拥有最低的复杂性。
 
-Algorithms don't always perform the same and may vary based on the data they are supplied. While in some cases they will execute quickly, in other cases they will execute slowly, even with the same number of elements to deal with.
+算法并不总是表现得相同，并且会根据所提供的数据而变化。尽管在某些情况下他们会执行得很快，在其他情况下他们会执行得很慢，即使他们处理了相同数量的元素。
 
-In these examples, the base time is 1 element = `1ms`.
+在这些例子中，基础时间是 1 个元素 = `1ms`
 
 ##### O(1)
 
@@ -14,9 +14,9 @@ In these examples, the base time is 1 element = `1ms`.
 arr[arr.length - 1]
 ```
 
-* 1000 elements = `1ms`
+* 1000 个元素 = `1ms`
 
-Constant time complexity. No matter how many elements the array has, it will theoretically take (excluding real-world variation) the same amount of time to execute.
+常数时间复杂度。不管数组有多少个元素，理论上他们执行时间是相同的（排除实际的变化）。
 
 ##### O(N)
 
@@ -24,9 +24,9 @@ Constant time complexity. No matter how many elements the array has, it will the
 arr.filter(fn)
 ```
 
-* 1000 elements = `1000ms`
+* 1000 个元素 = `1000ms`
 
-Linear time complexity. The execution time will increase linearly with the number of elements the array has. If the array has 1000 elements and the function takes 1ms to execute, 7000 elements will take 7ms to execute. This is because the function must iterate through all elements of the array before returning a result.
+线性时间复杂度。执行时间会随着数组元素的数量线性地增长。如果数组有 1000 个元素并且函数执行一次花费 1ms，7000 个元素会执行 7ms。这是因为函数必须在返回结果之前遍历数组的所有元素。
 
 ##### O([1, N])
 
@@ -34,9 +34,9 @@ Linear time complexity. The execution time will increase linearly with the numbe
 arr.some(fn)
 ```
 
-* 1000 elements = `1ms <= x <= 1000ms`
+* 1000 个元素 = `1ms <= x <= 1000ms`
 
-The execution time varies depending on the data supplied to the function, it may return very early or very late. The best case here is O(1) and the worst case is O(N).
+执行时间会根据提供的数据的不同而不同，函数可以很快活着很慢地返回。最好的情况是 O(1)，而最坏的情况是 O(N)。
 
 ##### O(NlogN)
 
@@ -46,7 +46,7 @@ arr.sort(fn)
 
 * 1000 elements ~= `10000ms`
 
-Browsers usually implement the quicksort algorithm for the `sort()` method and the average time complexity of quicksort is O(NlgN). This is very efficient for large collections.
+浏览器通常为 `sort()` 方法实现了了快速排序（Quicksort），快排的平均时间复杂度是 O(NlgN)。这对大量数据非常高效。
 
 ##### O(N^2)
 
@@ -58,9 +58,9 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-* 1000 elements = `1000000ms`
+* 1000 个元素 = `1000000ms`
 
-The execution time rises quadratically with the number of elements. Usually the result of nesting loops.
+执行时间随着元素的数量平方增长。通常是由于嵌套的循环。
 
 ##### O(N!)
 
@@ -80,19 +80,19 @@ const permutations = arr => {
 }
 ```
 
-* 1000 elements = `Infinity` (practically) ms
+* 1000 个元素 = `无限大（Infinity）` (实际上) ms
 
-The execution time rises extremely fast with even just 1 addition to the array.
+执行时间会增长地非常快，即使数组只增加了一个元素。
 
 #### Good to hear
 
-* Be wary of nesting loops as execution time increases exponentially.
+* 当执行时间呈指数增长时，要小心嵌套循环。
 
 ##### Additional links
 
 <!-- Whenever possible, link a more detailed explanation. -->
 
-* [Big O Notation in JavaScript](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
+* [JavaScript 的大O符号](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
 
 <!-- tags: (javascript) -->
 

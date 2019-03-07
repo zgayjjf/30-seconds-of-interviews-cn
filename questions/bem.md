@@ -1,24 +1,24 @@
-### What is CSS BEM?
+### 什么是 CSS BEM？
 
 #### Answer
 
-The BEM methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. BEM stands for Block Element Modifier which is an explanation for its structure. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
+BEM 方法是一个 CSS class 命名约定，他通过定义命名空间（namespace）来解决作用域问题，从而使 CSS 更可维护。BEM 代表着 块 元素 修饰（Block Element Modifier），其名字也是也是其结构的解释。一个**块** 是一个单独的组件，可以跨项目使用，对其子组件（元素，Elements）起到命名空间的作用。**修饰**用于当块或者元素处于一个特定的状态，或者在结构、样式上有所不同的时候。
 
 ```css
-/* block component */
+/* 块组件 */
 .block {
 }
 
-/* element */
+/* 元素 */
 .block__element {
 }
 
-/* modifier */
+/* 修饰 */
 .block__element--modifier {
 }
 ```
 
-Here is an example with the class names on markup:
+下面是一个有着 class 的样例：
 
 ```html
 <nav class="navbar">
@@ -28,15 +28,14 @@ Here is an example with the class names on markup:
 </nav>
 ```
 
-In this case, `navbar` is the Block, `navbar__link` is an Element that makes no sense outside of the `navbar` component, and `navbar__link--active` is a Modifier that indicates a different state for the `navbar__link` Element.
-
-Since Modifiers are verbose, many opt to use `is-*` flags instead as modifiers.
+在这种情况下，`navbar` 是块，`navbar__link` 是一个在 `navbar` 组件外没有任何意义的元素，而 `navbar__link--active` 是一个修饰，意味着 `navbar__link` 元素处于一个不同的状态。
+由于秀使其很啰嗦，很多人选择使用 `is-*` 作为修饰符。
 
 ```html
 <a href="/" class="navbar__link is-active"></a>
 ```
 
-These must be chained to the Element and never alone however, or there will be scope issues.
+修饰符必须被链接到元素上，而且永远不可以单独使用，否则会有作用域问题。
 
 ```css
 .navbar__link.is-active {
@@ -45,11 +44,11 @@ These must be chained to the Element and never alone however, or there will be s
 
 #### Good to hear
 
-* Alternative solutions to scope issues like CSS-in-JS
+* 作用域问题的可选的解决方案，比如 CSS-in-JS
 
 ##### Additional links
 
-* [Writing clean and maintainable CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
+* [编写干净、可维护的CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
 
 <!-- tags: (css) -->
 

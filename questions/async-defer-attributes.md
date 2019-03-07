@@ -1,15 +1,14 @@
-### What are `defer` and `async` attributes on a `<script>` tag?
+### `<script>` 标签里面的 `defer` 和 `async` 属性是什么？
 
 #### Answer
 
-If neither attribute is present, the script is downloaded and executed synchronously, and will halt parsing of the document until it has finished executing (default behavior). Scripts are downloaded and executed in the order
-they are encountered.
+如果两个属性都没写，脚本（script）会被串行地下载并执行，并且会暂停对文档（document）的解析（parsing），直到脚本执行完毕（默认行为）。脚本会按照其出现的顺序来下载并执行。
 
-The `defer` attribute downloads the script while the document is still parsing but waits until the document has finished parsing before executing it, equivalent to executing inside a `DOMContentLoaded` event listener. `defer` scripts will execute in order.
+`defer` 属性在文档解析的同时下载脚本，但是会在文档解析完成之后再执行它，相当于在 `DOMContentLoaded` 事件监听器中执行脚本。所有 `defer` 的脚本会顺序执行。
 
-The `async` attribute downloads the script during parsing the document but will pause the parser to execute the script before it has fully finished parsing. `async` scripts will not necessarily execute in order.
+`async` 属性会在文档解析的同时下载脚本，但是如果在文档解析完之前完成脚本下载，会前暂停文档解析，转而去执行脚本。`async` 的脚本执行不一定按照熟顺序。
 
-Note: both attributes must only be used if the script has a `src` attribute (i.e. not an inline script).
+注意：两个属性都应该用于带有 `src` 标签的 script 上（比如，非内联脚本）
 
 ```html
 <script src="myscript.js"></script>
@@ -19,10 +18,10 @@ Note: both attributes must only be used if the script has a `src` attribute (i.e
 
 #### Good to hear
 
-* Placing a `defer` script in the `<head>` allows the browser to download the script while the page is still parsing, and is therefore a better option than placing the script before the end of the body.
-* If the scripts rely on each other, use `defer`.
-* If the script is independent, use `async`.
-* Use `defer` if the DOM must be ready and the contents are not placed within a `DOMContentLoaded` listener.
+* 在 `<head>` 里面放 `defer` 脚本，可以让浏览器在页面解析的同时下载脚本，因此相比于把脚本放在 body 末尾，这是一个更好的选择。
+* 如果脚本之间有依赖，使用 `defer`。
+* 如果脚本是独立的，使用 `async`。
+* 如果 DOM 必须已经准备好并且脚本内容没有放在 `DOMContentLoaded` 监听器里面，使用 `defer`。
 
 ##### Additional links
 
