@@ -1,28 +1,28 @@
-### What is a closure? Can you give a useful example of one?
+### 闭包（closure）是什么？你可以给一个有用的例子嘛？
 
 #### Answer
 
-A closure is a function defined inside another function and has access to its lexical scope even when it is executing outside its lexical scope. The closure has access to variables in three scopes:
+闭包是一个定义在其他函数里面的函数，并且有权访问其词法作用域（lexical scope）—— 甚至于当它在运行在其词法作用域以外的时候。闭包有权访问以下三个作用域的变量：
 
-* Variables declared in its own scope
-* Variables declared in the scope of the parent function
-* Variables declared in the global scope
+* 定义在其自身作用域的变量
+* 定义在其父函数作用域的变量
+* 定义在全局作用域的变量
 
-In JavaScript, all functions are closures because they have access to the outer scope, but most functions don't utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.
+在 JavaScript，所有的函数都是闭包，因为他们有权限访问外部的作用域，但是大部分函数没有充分利用闭包的特性：状态保存。这也是为什么闭包有时候被称为状态函数（stateful function）
 
-In addition, closures are the only way to store private data that can't be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user's own code.
+另外，闭包也是 JavaScript 里面唯一的保存外部无法访问的私有数据的方式。这是 UMD（Universal Module Definition）模式的关键，经常用于库里面，可以让库只暴露公开 API，但是让其实现细节（implementation detail）保持私密，避免了和其他库或者用户的代码的命名冲突。
 
 #### Good to hear
 
-* Closures are useful because they let you associate data with a function that operates on that data.
-* A closure can substitute an object with only a single method.
-* Closures can be used to emulate private properties and methods.
+* 闭包非常有用，因为它允许你将数据和操作该数据的函数关联起来。
+* 一个闭包可以用一个函数替代一个对象。
+* 闭包可以用于模拟私有属性和方法。
 
 ##### Additional links
 
 * [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-* [What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
-* [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+* [什么是闭包](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
+* [我从未理解 JavaScript 的闭包](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 
 <!-- tags: (javascript) -->
 
