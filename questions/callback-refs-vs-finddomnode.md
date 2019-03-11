@@ -1,11 +1,11 @@
-### Which is the preferred option between callback refs and findDOMNode()?
+### 回调引用（callback refs） 和 findDOMNode()，哪个更好？
 
 #### Answer
 
-Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.
+回调引用优于 `findDOMNode())` API，这是因为 `findDOMNode()` 影响了 React 未来的一些改进。
 
 ```js
-// Legacy approach using findDOMNode()
+// 之前使用 `findDOMNode()` 的方式。
 class MyComponent extends Component {
   componentDidMount() {
     findDOMNode(this).scrollIntoView()
@@ -16,7 +16,7 @@ class MyComponent extends Component {
   }
 }
 
-// Recommended approach using callback refs
+// 推荐使用回调引用的方式。
 class MyComponent extends Component {
   componentDidMount() {
     this.node.scrollIntoView()
@@ -30,7 +30,7 @@ class MyComponent extends Component {
 
 #### Good to hear
 
-* Callback refs are preferred over `findDOMNode()`.
+* 更推荐使用回调引用而不是 `findDOMNode()`。
 
 ##### Additional links
 
