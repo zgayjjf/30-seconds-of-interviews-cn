@@ -1,10 +1,10 @@
-### What are inline conditional expressions?
+### 什么是内联条件表达式（Inline condition expression）？
 
 #### Answer
 
-Since a JSX element tree is one large expression, you cannot embed statements inside. Conditional expressions act as a replacement for statements to use inside the tree.
+由于 JSX 元素树是一个大的表达式，你无法在其中嵌入语句（Statement）。在树里面，条件表达式可以用于替代语句。
 
-For example, this won't work:
+例如，下面代码不会运行：
 
 <!-- prettier-ignore -->
 ```js
@@ -24,7 +24,7 @@ function App({ messages, isVisible }) {
 }
 ```
 
-Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statements.
+逻辑与 `&&` 和 三元操作符 `? :` 可以替代 `if`/`else`语句。
 
 ```js
 function App({ messages, isVisible }) {
@@ -45,7 +45,7 @@ function App({ messages, isVisible }) {
 
 ##### Additional links
 
-* [React docs on Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+* [React 文档：条件渲染](https://reactjs.org/docs/conditional-rendering.html)
 
 <!-- tags: (react,javascript) -->
 

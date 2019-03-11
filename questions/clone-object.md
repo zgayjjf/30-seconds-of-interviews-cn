@@ -9,7 +9,7 @@ const obj = { a: 1, b: 2 }
 const shallowClone = { ...obj }
 ```
 
-这种方法忽略掉了原型（prototype）。此外，嵌套的对象没有被复制，而是复制了他们的引用（reference），所以嵌套的对象会仍然引用与原始对象相同的对象。为了更高效地复制对象里可能嵌套的任何类型的对象（Date、RegExp、Function、Set等），深拷贝（Deep-cloning）更为复杂。
+这种方法忽略掉了原型（prototype）。此外，嵌套的对象没有被复制，而是复制了他们的引用（reference），所以嵌套的对象会仍然引用与原始对象相同的对象。为了更高效地复制对象里可能嵌套的任何类型的对象（Date、RegExp、Function、Set 等），深拷贝（Deep-cloning）更为复杂。
 
 其他方法包括：
 

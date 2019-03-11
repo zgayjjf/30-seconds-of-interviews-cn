@@ -1,15 +1,14 @@
-### In which states can a Promise be?
+### Promise 可以处于哪些状态？
 
 #### Answer
 
-A `Promise` is in one of these states:
+`Promise` 可以处于这些状态：
 
-* pending: initial state, neither fulfilled nor rejected.
-* fulfilled: meaning that the operation completed successfully.
-* rejected: meaning that the operation failed.
+* pending: 初始状态，没有 fulfilled，也没有 rejected。
+* fulfilled: 意味着操作已经成功完成。
+* rejected: 意味着操作失败。
 
-A pending promise can either be fulfilled with a value, or rejected with a reason (error).
-When either of these options happens, the associated handlers queued up by a promise's then method are called.
+一个 pending 的 promise，可以被通过一个值（value）转化为 fulfilled 状态, 或者用一个原因（Error 错误）变为 rejected 状态当以上任何一个发生的时候，promise 的 then 方法注册的函数，会按照其调用顺序排队执行。
 
 #### Good to hear
 

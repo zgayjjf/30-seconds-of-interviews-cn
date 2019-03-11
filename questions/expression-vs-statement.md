@@ -1,16 +1,16 @@
-### What is the difference between an expression and a statement in JavaScript?
+### JavaScript 里面表达式（Expression）和语句（Statement）的区别是什么？
 
 #### Answer
 
-There are two main syntactic categories in JavaScript: expressions and statements. A third one is both together, referred to as an expression statement. They are roughly summarized as:
+JavaScript 里面有两个主要的语法类别：表达式和语句。第三种语法是同时使用两者，称为表达式语句（Expression statement）。它们可以大致总结如下：
 
-* **Expression**: produces a value
-* **Statement**: performs an action
-* **Expression statement**: produces a value and performs an action
+* **表达式（Expression）**: 产生一个值
+* **语句（Statement）**: 执行一个操作
+* **表达式语句（Expression statement）**: 产生一个值并且执行一个操作
 
-A general rule of thumb:
+经验法则:
 
-> If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement.
+> 如果你可以打印出来或者把它赋给一个变量，那么他是一个表达式。如果不能，那它是一个语句。
 
 ##### Statements
 
@@ -23,10 +23,10 @@ if (true) {
 }
 ```
 
-Statements appear as instructions that do something but don't produce values.
+语句执行操作，但是不产生值。
 
 ```js
-// Assign `x` to the absolute value of `y`.
+// 将 `y` 的绝对值赋给 `x`
 var x
 if (y >= 0) {
   x = y
@@ -35,11 +35,11 @@ if (y >= 0) {
 }
 ```
 
-The only expression in the above code is `y >= 0` which produces a value, either `true` or `false`. A value is not produced by other parts of the code.
+上面唯一的表达式是 `y >=0`，它产生了一个值，`true` 或者 `false`。值不是由代码的其他部分产生的。
 
 ##### Expressions
 
-Expressions produce a value. They can be passed around to functions because the interpreter replaces them with the value they resolve to.
+表达式产生一个值。他们可以被传到函数里面，因为解释器会用他们解析出来的值替换它们。
 
 ```js
 5 + 5 // => 10
@@ -49,24 +49,24 @@ lastCharacter("input") // => "t"
 true === true // => true
 ```
 
-##### Expression statements
+##### 表达式语句
 
-There is an equivalent version of the set of statements used before as an expression using the conditional operator:
+通过使用条件运算符，可以将之前的语句集转化为一个等价的表达式。
 
 ```js
-// Assign `x` as the absolute value of `y`.
+// 将 `y` 的绝对值赋给 `x`
 var x = y >= 0 ? y : -y
 ```
 
-This is both an expression and a statement, because we are declaring a variable `x` (statement) as an evaluation (expression).
+这既是表达式也是语句，因为我们声明了一个变量 `x`（语句），其值为一个求值结果（表达式）
 
 #### Good to hear
 
-* Function declarations vs function expressions
+* 函数声明和函数表达式
 
 ##### Additional links
 
-* [What is the difference between a statement and an expression?](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
+* [声明和表达式的区别是什么？](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
 
 <!-- Whenever possible, link a more detailed explanation. -->
 

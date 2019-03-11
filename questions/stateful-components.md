@@ -1,11 +1,11 @@
-### What is a stateful component in React?
+### React 中的有状态组件（Stateful Component）是什么意思？
 
 #### Answer
 
-A stateful component is a component whose behavior depends on its state. This means that two separate instances of the component if given the same props will not necessarily render the same output, unlike pure function components.
+有状态组件是其行为依赖于状态的组件。这意味着，如果给一个组件的两个不同的实例以相同的参数，不一定会渲染出相同的结果，这一点不同于纯函数组件（Pure Function Component）。
 
 ```js
-// Stateful class component
+// 有状态类组件（Stateful class component）
 class App extends Component {
   constructor(props) {
     super(props)
@@ -16,7 +16,7 @@ class App extends Component {
   }
 }
 
-// Stateful function component
+// 无状态组件（Stateful function component）
 function App() {
   const [count, setCount] = useState(0)
   return // ...
@@ -25,13 +25,13 @@ function App() {
 
 #### Good to hear
 
-* Stateful components have internal state that they depend on.
-* Stateful components are class components or function components that use stateful Hooks.
-* Stateful components have their state initialized in the constructor or with `useState()`.
+* 有状态组件具有它们依赖的内部状态。
+* 有状态组件包括类组件和使用了有状态 Hooks 的函数组件。
+* 有状态组件在他们的构造函数（constructor）里面或者用 `useState()` 来初始化状态。
 
 ##### Additional links
 
-* [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+* [React 文档 - 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 <!-- tags: (react,javascript) -->
 

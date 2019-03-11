@@ -1,18 +1,18 @@
-### What is a stateless component?
+### 无状态组件是什么？
 
 #### Answer
 
-A stateless component is a component whose behavior does not depend on its state. Stateless components can be either functional or class components. Stateless functional components are easier to maintain and test since they are guaranteed to produce the same output given the same props. Stateless functional components should be preferred when lifecycle hooks don't need to be used.
+无状态组件的行为不依赖于自身的状态。无状态组件可以是函数组件或者类组件。无状态函数组件更方便维护和测试，因为他们会保证在相同的参数下生成相同的输出。在没有用到生命周期钩子（Hooks）的情况下，应该优先使用无状态函数组件。
 
 #### Good to hear
 
-* Stateless components are independent of their state.
-* Stateless components can be either class or functional components.
-* Stateless functional components avoid the `this` keyword altogether.
+* 无状态组件独立于他们的状态。
+* 无状态组件可以是类组件或函数式组件。
+* 无状态函数组件应该完全避免使用 `this` 关键词。
 
 ##### Additional links
 
-* [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+* [React 文档 - 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 <!-- tags: (react,javascript) -->
 

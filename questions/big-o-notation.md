@@ -1,8 +1,8 @@
-### 什么是大O符号？
+### 什么是大 O 符号？
 
 #### Answer
 
-大O符号用于在计算机科学中描述一个算法的时间复杂度。最好的算法会执行得最快并且拥有最低的复杂性。
+大 O 符号用于在计算机科学中描述一个算法的时间复杂度。最好的算法会执行得最快，并且拥有最低的复杂性。
 
 算法并不总是表现得相同，并且会根据所提供的数据而变化。尽管在某些情况下他们会执行得很快，在其他情况下他们会执行得很慢，即使他们处理了相同数量的元素。
 
@@ -92,7 +92,7 @@ const permutations = arr => {
 
 <!-- Whenever possible, link a more detailed explanation. -->
 
-* [JavaScript 的大O符号](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
+* [JavaScript 的大 O 符号](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
 
 <!-- tags: (javascript) -->
 

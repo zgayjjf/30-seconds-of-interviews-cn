@@ -1,19 +1,19 @@
-### How does hoisting work in JavaScript?
+### JavaScript 中的变量提升（Hoisting）是如何工作的？
 
 #### Answer
 
-Hoisting is a JavaScript mechanism where variable and function declarations are put into memory during the compile phase. This means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+变量提升是 JavaScript 的一种机制，变量和函数声明会在编译阶段被放到内存中去。这意味着，无论函数和变量在哪里被声明，也无论作用域是全局（global）还是局部（local），它们都会被移动到作用域的顶部，
 
-However, the value is not hoisted with the declaration.
+然而，赋值是不会随着声明提升的。
 
-The following snippet:
+以下代码段：
 
 ```js
 console.log(hoist)
 var hoist = "value"
 ```
 
-is equivalent to:
+和以下代码段等价：
 
 ```js
 var hoist
@@ -21,18 +21,18 @@ console.log(hoist)
 hoist = "value"
 ```
 
-Therefore logging `hoist` outputs `undefined` to the console, not `"value"`.
+所以打印变量 `hoist` 会输出 `undefined` 而不是 `"value"`。
 
-Hoisting also allows you to invoke a function declaration before it appears to be declared in a program.
+变量提升也允许你在一个函数声明（Function declaration）的位置之前调用一个函数。
 
 ```js
-myFunction() // No error; logs "hello"
+myFunction() // 没有错误; 打印 "hello"
 function myFunction() {
   console.log("hello")
 }
 ```
 
-But be wary of function expressions that are assigned to a variable:
+但是小心函数表达式（Function expression）有所不同：
 
 ```js
 myFunction() // Error: `myFunction` is not a function
@@ -43,13 +43,13 @@ var myFunction = function() {
 
 #### Good to hear
 
-* Hoisting is JavaScript’s default behavior of moving declarations to the top
-* Functions declarations are hoisted before variable declarations
+* 变量提升是 JavaScript 的默认行为，其将变量提升到作用域顶部。
+* 函数声明会被提升到变量声明之前。
 
 ##### Additional links
 
 * [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
-* [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
+* [理解 JavaScript 中的变量提升](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
 
 <!-- tags: (javascript) -->
 

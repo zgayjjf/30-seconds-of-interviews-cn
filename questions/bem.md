@@ -28,8 +28,7 @@ BEM 方法是一个 CSS class 命名约定，他通过定义命名空间（names
 </nav>
 ```
 
-在这种情况下，`navbar` 是块，`navbar__link` 是一个在 `navbar` 组件外没有任何意义的元素，而 `navbar__link--active` 是一个修饰，意味着 `navbar__link` 元素处于一个不同的状态。
-由于秀使其很啰嗦，很多人选择使用 `is-*` 作为修饰符。
+在这种情况下，`navbar` 是块，`navbar__link` 是一个在 `navbar` 组件外没有任何意义的元素，而 `navbar__link--active` 是一个修饰，意味着 `navbar__link` 元素处于一个不同的状态。由于很啰嗦，很多人选择使用 `is-*` 作为修饰符。
 
 ```html
 <a href="/" class="navbar__link is-active"></a>
@@ -48,7 +47,7 @@ BEM 方法是一个 CSS class 命名约定，他通过定义命名空间（names
 
 ##### Additional links
 
-* [编写干净、可维护的CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
+* [编写干净、可维护的 CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
 
 <!-- tags: (css) -->
 

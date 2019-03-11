@@ -1,8 +1,8 @@
-### Generate an array, containing the Fibonacci sequence, up until the nth term.
+### 生成一个包含 n 项斐波那契数列的数组。
 
 #### Answer
 
-Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add values into the array, using the sum of the last two values, except for the first two.
+初始化一个长度为 n 的空数组。使用 `Array.prototype.reduce()` 在数组中增加值，每个值都是前面最后两个值的和（除了最开始两个值）。
 
 ```js
 const fibonacci = n =>
@@ -16,7 +16,7 @@ const fibonacci = n =>
 
 ##### Additional links
 
-* [Similar problem](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
+* [类似问题](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
 
 <!-- tags: (javascript) -->
 

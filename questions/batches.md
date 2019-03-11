@@ -1,4 +1,3 @@
-### Create a function `batches` that returns the maximum number of whole batches that can be cooked from a recipe.
 ### 创建一个 `batches` 函数，返回根据一个食谱可以烹饪的食物的最大数量。
 
 ```js
