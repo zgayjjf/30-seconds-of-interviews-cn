@@ -1,19 +1,19 @@
-### What is the purpose of callback function as an argument of `setState`?
+### `setState` 的回调函数（Callback function）参数有什么用？
 
 #### Answer
 
-The callback function is invoked when `setState` has finished and the component gets rendered. Since `setState` is asynchronous, the callback function is used for any post action.
+回调函数在 `setState` 执行完毕，并且组件渲染完毕之后调用。由于 `setState` 是异步的，回调函数可以用于任何 `setState` 调用完成之后的操作。
 
 ```js
 setState({ name: "sudheer" }, () => {
-  console.log("The name has updated and component re-rendered")
+  console.log("name 参数已更新，组件已重新渲染")
 })
 ```
 
 #### Good to hear
 
-* The callback function is invoked after `setState` finishes and is used for any post action.
-* It is recommended to use lifecycle method rather this callback function.
+* 回调函数在 `setState` 执行完之后调用，并且可以用于任何之后的操作。
+* 推荐使用生命周期函数，而不是回调函数。
 
 ##### Additional links
 

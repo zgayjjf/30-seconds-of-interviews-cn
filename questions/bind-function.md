@@ -1,4 +1,4 @@
-### Create a standalone function `bind` that is functionally equivalent to the method `Function.prototype.bind`.
+### 创建一个独立的 `bind` 函数，其功能等价于 `Function.prototype.bind` 。
 
 ```js
 function example() {
@@ -10,7 +10,7 @@ boundExample.call({ b: true }) // logs { a: true }
 
 #### Answer
 
-Return a function that accepts an arbitrary number of arguments by gathering them with the rest `...` operator. From that function, return the result of calling the `fn` with `Function.prototype.apply` to apply the context and the array of arguments to the function.
+返回一个函数，该函数接受任意数量的参数，并将它们用剩余参数运算符 `...` 收集起来。该函数使用 `fn` 调用 `Function.prototype.apply` 并传入上下文（context）和传入的参数数组，最后将结果返回。
 
 ```js
 const bind = (fn, context) => (...args) => fn.apply(context, args)
