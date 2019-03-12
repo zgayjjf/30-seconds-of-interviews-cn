@@ -1,5 +1,3 @@
-<a href="https://30secondsofinterviews.org"><img src="logo.jpg" alt="30 Seconds of Interviews logo"></a>
-
 <h1 align="center">
   30 秒前端面试题
 </h1>
@@ -30,7 +28,7 @@
 
 > 30 秒前端面试题是一个社区的成果，所以请尽你所能贡献自己的力量。每一个贡献都是有帮助的！
 
-如果想加入翻译小组或者进群交流&招聘，请加微信：simple_robot
+如果想加入翻译小组或者进群交流&招聘，请加微信入群：simple_robot。
 
 ![simple_robot](./wechat-simple_robot.png)
 

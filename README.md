@@ -1,10 +1,8 @@
-<a href="https://30secondsofinterviews.org"><img src="logo.jpg" alt="30 Seconds of Interviews logo"></a>
-
 <h1 align="center">
-  30 Seconds of Interviews
+  30 秒前端面试题
 </h1>
 
-<h4 align="center">A curated collection of common interview questions to help you prepare for your next interview.</h4>
+<h4 align="center">精选常见前端面试题集，帮助你为下一次面试做准备。</h4>
 
 <br>
 
@@ -18,65 +16,58 @@
 
 <br>
 
-> _This README is built using [markdown-builder](https://github.com/30-seconds/markdown-builder)._
+> *该 README 使用 [markdown-builder](https://github.com/30-seconds/markdown-builder) 构建.*
 
-## Foreword
+## 前言
 
-Interviews are daunting and can make even the most seasoned expert forget things under pressure. Review and learn what questions are commonly encountered in interviews curated by the community that's answered them and go prepared for anything they'll ask. By bringing together experience and real-world examples, you can go from being nervous to being prepared for that next big opportunity.
+面试是很可怕的，甚至可以让最有经验的专家在压力之下忘记如何回答。一起来了解这些社区收集的面试中常见问题，为面试官提出的任何问题做好准备。通过把经验总结和现实例子结合起来，可以让你从紧张到从容不迫地迎接下一个机会。
 
-## [View online](https://30secondsofinterviews.org/)
+## [在线查看（英文）](https://30secondsofinterviews.org/)
 
-<a href="https://30secondsofinterviews.org"><img src="promo.jpg" alt="30 Seconds of Interviews promo"></a>
+## 贡献
 
-<br>
+> 30 秒前端面试题是一个社区的成果，所以请尽你所能贡献自己的力量。每一个贡献都是有帮助的！
 
-## Our sponsors
+如果想加入翻译小组或者进群交流&招聘，请加微信入群：simple_robot。
 
-<a href="https://www.digitalocean.com/"><img src="digitalocean.png" alt="DigitalOcean logo"></a>
+![simple_robot](./wechat-simple_robot.png)
 
-<br>
 
-## Contributing
+如果想提交面试题，请阅读 [贡献指南](https://github.com/30-seconds/30-seconds-of-interviews/blob/master/CONTRIBUTING.md) 并在原仓库提交一个 pull request。
 
-> 30 seconds of interviews is a community effort, so feel free to contribute in any way you can. Every contribution helps!
-
-Do you have an excellent idea or know some cool questions that aren't on the list? Read the [contribution guidelines](https://github.com/30-seconds/30-seconds-of-interviews/blob/master/CONTRIBUTING.md) and submit a pull request.
-
-Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to help with the development of the project.
-
-#### Related projects
+#### 相关项目
 
 - [30 Seconds of Code](https://30secondsofcode.org)
 - [30 Seconds of CSS](https://30-seconds.github.io/30-seconds-of-css/)
 - [30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)
 - [30 Seconds of Knowledge](https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla)
 
-## Table of Contents
+## 内容
 
 
 ### JavaScript
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
 * [创建一个 `batches` 函数，返回根据一个食谱可以烹饪的食物的最大数量。](#创建一个-batches-函数，返回根据一个食谱可以烹饪的食物的最大数量。)
 * [什么是大 O 符号？](#什么是大-o-符号？)
 * [创建一个独立的 `bind` 函数，其功能等价于 `Function.prototype.bind` 。](#创建一个独立的-bind-函数，其功能等价于-functionprototypebind-。)
-* [How can you avoid callback hells?](#how-can-you-avoid-callback-hells)
+* [如何避免回调地狱？](#如何避免回调地狱？)
 * [`setState` 的回调函数（Callback function）参数有什么用？](#setstate-的回调函数（callback-function）参数有什么用？)
-* [Which is the preferred option between callback refs and findDOMNode()?](#which-is-the-preferred-option-between-callback-refs-and-finddomnode)
+* [回调引用（callback refs） 和 findDOMNode()，哪个更好？](#回调引用（callback-refs）-和-finddomnode，哪个更好？)
 * [什么是回调（Callback）？你可以举一个使用回调的例子吗？](#什么是回调（callback）？你可以举一个使用回调的例子吗？)
-* [What is the `children` prop?](#what-is-the-children-prop)
+* [`children` 参数是什么？](#children-参数是什么？)
 * [如何在 JavaScript 中复制一个对象？](#如何在-javascript-中复制一个对象？)
-* [What is a closure? Can you give a useful example of one?](#what-is-a-closure-can-you-give-a-useful-example-of-one)
+* [闭包（closure）是什么？你可以给一个有用的例子嘛？](#闭包（closure）是什么？你可以给一个有用的例子嘛？)
 * [如何在 JavaScript 中对比两个对象？](#如何在-javascript-中对比两个对象？)
-* [What is context?](#what-is-context)
+* [什么是上下文（Context）？](#什么是上下文（context）？)
 * [CORS 是什么？](#cors-是什么？)
 * [DOM 是什么？](#dom-是什么？)
 * [相等操作符 `==` 和 `===` 的区别是什么？](#相等操作符--和--的区别是什么？)
 * [React 中元素（Element）和组件（Component）的区别是什么？](#react-中元素（element）和组件（component）的区别是什么？)
 * [事件代理是什么，为什么用它？你能举一个使用它的例子嘛？](#事件代理是什么，为什么用它？你能举一个使用它的例子嘛？)
-* [What is event-driven programming?](#what-is-event-driven-programming)
+* [什么是事件驱动编程？](#什么是事件驱动编程？)
 * [JavaScript 里面表达式（Expression）和语句（Statement）的区别是什么？](#javascript-里面表达式（expression）和语句（statement）的区别是什么？)
 * [JavaScript 中的真值（Truthy）和假值（Falsy）是什么？](#javascript-中的真值（truthy）和假值（falsy）是什么？)
 * [生成一个包含 n 项斐波那契数列的数组。](#生成一个包含-n-项斐波那契数列的数组。)
@@ -136,13 +127,13 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### React
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
 * [`setState` 的回调函数（Callback function）参数有什么用？](#setstate-的回调函数（callback-function）参数有什么用？)
-* [Which is the preferred option between callback refs and findDOMNode()?](#which-is-the-preferred-option-between-callback-refs-and-finddomnode)
-* [What is the `children` prop?](#what-is-the-children-prop)
+* [回调引用（callback refs） 和 findDOMNode()，哪个更好？](#回调引用（callback-refs）-和-finddomnode，哪个更好？)
+* [`children` 参数是什么？](#children-参数是什么？)
 * [Why does React use `className` instead of `class` like in HTML?](#why-does-react-use-classname-instead-of-class-like-in-html)
-* [What is context?](#what-is-context)
+* [什么是上下文（Context）？](#什么是上下文（context）？)
 * [React 中元素（Element）和组件（Component）的区别是什么？](#react-中元素（element）和组件（component）的区别是什么？)
 * [What are error boundaries in React?](#what-are-error-boundaries-in-react)
 * [What are fragments?](#what-are-fragments)
@@ -167,7 +158,7 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### HTML
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
 * [`image` 标签里面的 `alt` 属性有什么用？](#image-标签里面的-alt-属性有什么用？)
 * [`<script>` 标签里面的 `defer` 和 `async` 属性是什么？](#script-标签里面的-defer-和-async-属性是什么？)
@@ -186,7 +177,7 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### CSS
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
 * [什么是 CSS BEM？](#什么是-css-bem？)
 * [Describe the layout of the CSS Box Model and briefly describe each component.](#describe-the-layout-of-the-css-box-model-and-briefly-describe-each-component)
@@ -204,9 +195,9 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### Node
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
-* [How can you avoid callback hells?](#how-can-you-avoid-callback-hells)
+* [如何避免回调地狱？](#如何避免回调地狱？)
 * [NodeJS often uses a callback pattern where if an error is encountered during execution, this error is passed as the first argument to the callback. What are the advantages of this pattern?](#nodejs-often-uses-a-callback-pattern-where-if-an-error-is-encountered-during-execution-this-error-is-passed-as-the-first-argument-to-the-callback-what-are-the-advantages-of-this-pattern)
 * [What is the event loop in Node.js?](#what-is-the-event-loop-in-nodejs)
 * [What is REST?](#what-is-rest)
@@ -216,7 +207,7 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### Security
 
 <details>
-<summary>View contents</summary>
+<summary>查看详情</summary>
 
 * [What is a cross-site scripting attack (XSS) and how do you prevent it?](#what-is-a-cross-site-scripting-attack-xss-and-how-do-you-prevent-it)
 </details>
@@ -228,12 +219,12 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 ### 无状态组件是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 无状态组件的行为不依赖于自身的状态。无状态组件可以是函数组件或者类组件。无状态函数组件更方便维护和测试，因为他们会保证在相同的参数下生成相同的输出。在没有用到生命周期钩子（Hooks）的情况下，应该优先使用无状态函数组件。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 无状态组件独立于他们的状态。
@@ -241,24 +232,24 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 * 无状态函数组件应该完全避免使用 `this` 关键词。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 相等操作符 `==` 和 `===` 的区别是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 三等号 (`===`) 检查是否严格相等，意即：类型和值都要一样。双等号则会首先进行强制类型转换，使得等号两边对象拥有同样的类型，再进行严格的比较。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 尽可能使用三等号来做相等比较，因为宽松相等 `==` 会有反直觉的结果。
@@ -266,19 +257,19 @@ Join our [Gitter channel](https://gitter.im/30-seconds-of-interviews/Lobby) to h
 * 提到假值 (Falsy values) 和他们的比较。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN 比较操作符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### React 中元素（Element）和组件（Component）的区别是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 元素是一个纯 JavaScript 对象，代表了一个 DOM 节点或者组件。元素是纯粹的、不可变的，并且创建消耗低。
 
@@ -291,14 +282,14 @@ const domNodeElement = <div />
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 元素是不可变的纯对象，描述了你要创建的 DOM 节点或者组件。
 * 组件可以是类或者函数，接收参数并且返回元素树（Element Tree）
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
@@ -306,12 +297,12 @@ const domNodeElement = <div />
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### React 中的有状态组件（Stateful Component）是什么意思？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 有状态组件是其行为依赖于状态的组件。这意味着，如果给一个组件的两个不同的实例以相同的参数，不一定会渲染出相同的结果，这一点不同于纯函数组件（Pure Function Component）。
 
@@ -335,7 +326,7 @@ function App() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 有状态组件具有它们依赖的内部状态。
@@ -343,19 +334,19 @@ function App() {
 * 有状态组件在他们的构造函数（constructor）里面或者用 `useState()` 来初始化状态。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Promise 可以处于哪些状态？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 `Promise` 可以处于这些状态：
 
@@ -366,24 +357,24 @@ function App() {
 一个 pending 的 promise，可以被通过一个值（value）转化为 fulfilled 状态, 或者用一个原因（Error 错误）变为 rejected 状态当以上任何一个发生的时候，promise 的 then 方法注册的函数，会按照其调用顺序排队执行。
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Official Web Docs Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 后缀自增运算符 `i++` 和 前缀自增运算符 `++i` 有什么区别？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 都把变量值加 1。区别在于他们什么时候求值。
 
@@ -404,18 +395,18 @@ let i = 0
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 创建一个 `batches` 函数，返回根据一个食谱可以烹饪的食物的最大数量。
 
@@ -450,7 +441,7 @@ batches(
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 我们必须有所有的配方中可用的原材料，而且数量要大于或等于所需的材料数量。只要有一个原材料不可用或低于我们需要的，我们就无法做哪怕一批。
 
@@ -466,18 +457,18 @@ const batches = (recipe, available) =>
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What does the following code evaluate to?
 
@@ -486,31 +477,31 @@ typeof typeof 0
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 It evaluates to `"string"`.
 
 `typeof 0` evaluates to the string `"number"` and therefore `typeof "number"` evaluates to `"string"`.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 如何在 JavaScript 中复制一个对象？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 使用对象扩展运算符（Object spread operator） `...`，对象自身的可枚举属性就会被复制到新的对象中。这可以创建一个对象的浅拷贝（Shallow clone）。
 
@@ -528,14 +519,14 @@ const shallowClone = { ...obj }
 * `Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key[, acc), {})` 是另一个更详尽的替代方案，它更深入地展示了这个概念。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * JavaScript 通过引用传递对象，意味着说嵌套的对象的引用会被复制，而不是他们的值。
 * 合并两个对象也可以用同样的方法。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
@@ -543,12 +534,12 @@ const shallowClone = { ...obj }
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between synchronous and asynchronous code in JavaScript?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Synchronous means each operation must wait for the previous one to complete.
 
@@ -557,25 +548,25 @@ Asynchronous means an operation can occur while another operation is still being
 In JavaScript, all code is synchronous due to the single-threaded nature of it. However, asynchronous operations not part of the program (such as `XMLHttpRequest` or `setTimeout`) are processed outside of the main thread because they are controlled by native code (browser APIs), but callbacks part of the program will still be executed synchronously.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * JavaScript has a concurrency model based on an "event loop".
 * Functions like `alert` block the main thread so that no user input is registered until the user closes it.
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 如何在 JavaScript 中对比两个对象？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 在使用 `==` 和 `===` 时，两个不同的对象尽管可能拥有同样的属性和相同的值，他们也不会被认为是相等的。这是因为他们是通过引用（内存中的位置）比较的，不像原始类型是通过值来比较的。
 
@@ -627,14 +618,14 @@ function isDeepEqual(obj1, obj2, testPrototypes = false) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 字符串和数字这样的原始数据类型，是通过它们的值来比较的。
 * 对象则是通过它们的引用（内存中的位置）来比较的。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [JavaScript 中的对象相等](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)
@@ -642,12 +633,12 @@ function isDeepEqual(obj1, obj2, testPrototypes = false) {
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is a cross-site scripting attack (XSS) and how do you prevent it?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 XSS refers to client-side code injection where the attacker injects malicious scripts into a legitimate website or web application. This is often achieved when the application does not validate user input and freely injects dynamic HTML content.
 
@@ -658,26 +649,26 @@ For example, a comment system will be at risk if it does not validate or escape 
 * The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
 * On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won't execute the script.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### CORS 是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 跨域资源共享（Cross-Origin Resource Sharing）是一个使用附加的 HTTP 头来给浏览器授予权限的机制，以使其可以访问不同于当前网站源（Origin）的服务器的资源。
 
@@ -686,31 +677,31 @@ For example, a comment system will be at risk if it does not validate or escape 
 为了安全原因，浏览器限制了 JavaScript 发起的跨域 HTTP 请求。`XMLHttpRequest` 和 `fetch` 都遵循同源策略，意味着一个 Web 应用用这些 API 只能请求同源的 HTTP 资源，除非其他源的响应里面包含了正确的 CORS 响应头。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * CORS 行为不是错误，而是一种保护用户的机制。
 * CORS 被设计用来保护用户，以防用户无意间访问了一个恶意的网站，而该网站请求了正常网站的数据从而读取用户的数据或者执行违背用户意愿的行为。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### DOM 是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 DOM（文档对象模型，Document Object Model）是一个跨平台的 API，它将 HTML 和 XML 文档视为一个节点（node）组成的树形结构。这些节点（比如元素和文本节点）是可以被程序操作的对象，并且任何可见的变化都会实时反映到文档上。在一个浏览器中，JavaScript 可以用这个 API 操作 DOM 节点，改变它们的在文档中的样式、内容和位置，或者通过事件监听器与 DOM 交互。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * DOM 被设计为独立于任何特定的编程语言，使得文档的结构可以从一个一致的 API 中获得。
@@ -719,14 +710,14 @@ DOM（文档对象模型，Document Object Model）是一个跨平台的 API，�
 * 当一个节点的 `innerHTML` 设置为一个新值时，HTML 解析器会解析该字符串。这是一种向向节点添加动态 HTML 的简单方式。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for DOM](https://developer.mozilla.org/en-US/docs/DOM)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 创建一个独立的 `bind` 函数，其功能等价于 `Function.prototype.bind` 。
 
@@ -739,7 +730,7 @@ boundExample.call({ b: true }) // logs { a: true }
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 返回一个函数，该函数接受任意数量的参数，并将它们用剩余参数运算符 `...` 收集起来。该函数使用 `fn` 调用 `Function.prototype.apply` 并传入上下文（context）和传入的参数数组，最后将结果返回。
 
@@ -748,23 +739,23 @@ const bind = (fn, context) => (...args) => fn.apply(context, args)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are the differences between `var`, `let`, `const` and no keyword statements?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 ##### No keyword
 
@@ -826,7 +817,7 @@ myObject = "hello" // Error
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * All declarations are hoisted to the top of their scope.
@@ -835,19 +826,19 @@ myObject = "hello" // Error
 * `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [`let` vs `const`](https://wesbos.com/let-vs-const/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 事件代理是什么，为什么用它？你能举一个使用它的例子嘛？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 事件代理是一种方法，将事件代理到一个公共的祖先上。由于事件冒泡（Event bubbling），事件会顺着 DOM 树向上冒泡，并且逐步地调用每一个在监听该事件的祖先节点上的处理函数，直到根节点。
 
@@ -877,25 +868,25 @@ document.addEventListener("click", e => {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 事件冒泡和捕获（capturing）的区别是什么？
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Event Delegation](https://davidwalsh.name/event-delegate)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### `setState` 的回调函数（Callback function）参数有什么用？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 回调函数在 `setState` 执行完毕，并且组件渲染完毕之后调用。由于 `setState` 是异步的，回调函数可以用于任何 `setState` 调用完成之后的操作。
 
@@ -906,26 +897,26 @@ setState({ name: "sudheer" }, () => {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 回调函数在 `setState` 执行完之后调用，并且可以用于任何之后的操作。
 * 推荐使用生命周期函数，而不是回调函数。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on `setState`](https://reactjs.org/docs/react-component.html#setstate)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### JavaScript 里面表达式（Expression）和语句（Statement）的区别是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 JavaScript 里面有两个主要的语法类别：表达式和语句。第三种语法是同时使用两者，称为表达式语句（Expression statement）。它们可以大致总结如下：
 
@@ -986,25 +977,25 @@ var x = y >= 0 ? y : -y
 这既是表达式也是语句，因为我们声明了一个变量 `x`（语句），其值为一个求值结果（表达式）
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 函数声明和函数表达式
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [声明和表达式的区别是什么？](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### JavaScript 中的真值（Truthy）和假值（Falsy）是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 一个值要么是真值要么是假值，取决于他在布尔上下文（Boolean context）中是如何被计算的。假值意味着似假的（False-like），真值意味着似真的（True-like）。本质上，这些值在执行某些操作时，会被强制类型转换为 `true` 或者 `false`。
 
@@ -1034,12 +1025,12 @@ Boolean([]) // true
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Truthy on MDN](https://developer.mozilla.org/en/docs/Glossary/Truthy)
@@ -1047,12 +1038,12 @@ Boolean([]) // true
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 生成一个包含 n 项斐波那契数列的数组。
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 初始化一个长度为 n 的空数组。使用 `Array.prototype.reduce()` 在数组中增加值，每个值都是前面最后两个值的和（除了最开始两个值）。
 
@@ -1065,24 +1056,24 @@ const fibonacci = n =>
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [类似问题](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### `0.1 + 0.2 === 0.3` 的值是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 它的计算结果是 `false`，因为 JavaScript 的数学计算使用 IEEE 754 标准，并且使用了 64 位的浮点数。这造成了在进行小数运算时的精度问题，简而言之，这是因为计算机是基于二进制工作的，而小数是十进制的。
 
@@ -1098,13 +1089,13 @@ approxEqual(0.1 + 0.2, 0.3) // true
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 解决该问题的简单方法
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [一个检测相等性的简单辅助函数](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
@@ -1112,24 +1103,24 @@ approxEqual(0.1 + 0.2, 0.3) // true
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 数组方法 `map()` 和 `forEach()` 的区别是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 两个方法都会变量数组的所有元素。`map()` 通过在每个元素上调用回调函数，从而将每个元素映射为一个新的元素，并返回一个新的数组。另一方面，`forEach()` 为每个元素调用回调函数，但是不返回一个新的数组。`forEach()` 通常被用于引发副作用的迭代，而 `map()` 通常用于函数式编程
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `forEach()` 用于以下场景：如果你需要对一个数组进行迭代，并且改变元素，同时不需要生成一个新的数组。
 * `map()` 用于需要保持数据不可变的情况，此时所有的原数组中的数据都会被映射到一个新的数组中。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
@@ -1138,12 +1129,12 @@ approxEqual(0.1 + 0.2, 0.3) // true
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is short-circuit evaluation in JavaScript?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Short-circuit evaluation involves logical operations evaluating from left-to-right and stopping early.
 
@@ -1202,25 +1193,25 @@ addEventListener(
 In the above case, if `e.target` is not or does not contain an element matching the `"button"` selector, the function will not be called. This is because the first operand will be falsy, causing the second operand to not be evaluated.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Are semicolons required in JavaScript?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Sometimes. Due to JavaScript's automatic semicolon insertion, the interpreter places semicolons after most statements. This means semicolons can be omitted in most cases.
 
@@ -1245,20 +1236,20 @@ const previousLine = 3
 In the above cases, the interpreter does not insert a semicolon after `3`, and therefore it will see the `3` as attempting object property access or being invoked as a function, which will throw errors.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Semicolons are usually optional in JavaScript but have edge cases where they are required.
 * If you don't use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 这个例子中，控制台会输出什么？
 
@@ -1272,31 +1263,31 @@ foobar()
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 由于变量提升（Hoisting），局部变量会 `foo` 会在 `console.log` 调用之前声明。这意味着局部变量而不是全局变量的 `foo` 会作为一个参数被传入 `console.log`。然而，由于只有变量声明被提升，其值没有提升，所以输出会是 `undefined`，而不是 `2`。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 变量提升是 JavaScript 的默认行为，会将声明移动到顶部。
 * 提到严格（`strict`）模式。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN 文档：提升](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### JavaScript 中的变量提升（Hoisting）是如何工作的？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 变量提升是 JavaScript 的一种机制，变量和函数声明会在编译阶段被放到内存中去。这意味着，无论函数和变量在哪里被声明，也无论作用域是全局（global）还是局部（local），它们都会被移动到作用域的顶部，
 
@@ -1338,14 +1329,14 @@ var myFunction = function() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 变量提升是 JavaScript 的默认行为，其将变量提升到作用域顶部。
 * 函数声明会被提升到变量声明之前。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
@@ -1353,12 +1344,12 @@ var myFunction = function() {
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### HTML 和 React 的事件处理有什么区别？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 在 HTML 里面，参数名全部是小写的，通过提供一个字符串用来调用一个已经定义好的函数：
 
@@ -1386,25 +1377,25 @@ function handleClick(e) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * HTML 使用小写，React 使用驼峰。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：事件处理](https://reactjs.org/docs/handling-events.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 为什么要把整个 JavaScript 源文件包括在一个立即执行函数里面？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 这种方式在 JavaScript 里面很常见。它创建了一个包含了整个文件内容的闭包（closure），从而创建了一个私有的命名空间，进而避免了模块、库之间潜在的命名冲突。
 
@@ -1420,21 +1411,21 @@ myLibrary.publicMethod() // 2
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 在很多流行的 JavaScript 库中很流行。
 * 创建了一个私有命名空间。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN 文档：闭包](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What does the following function return?
 
@@ -1448,30 +1439,30 @@ function greet() {
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Because of JavaScript's automatic semicolon insertion (ASI), the compiler places a semicolon after `return` keyword and therefore it returns `undefined` without an error being thrown.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Automatic semicolon placement can lead to time-consuming bugs
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 什么是内联条件表达式（Inline condition expression）？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 由于 JSX 元素树是一个大的表达式，你无法在其中嵌入语句（Statement）。在树里面，条件表达式可以用于替代语句。
 
@@ -1513,24 +1504,24 @@ function App({ messages, isVisible }) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：条件渲染](https://reactjs.org/docs/conditional-rendering.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Key 是什么？在列表里面使用它有什么好处？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Key 是一种特殊的字符串属性，帮助 React 识别哪个元素改变、增加或者移除了。它们用于渲染数组时给它们一个稳定的标识。每一个元素的 key 都应该是独一无二的（比如数据中的 ID，或者最起码需要是序号）。
 
@@ -1542,7 +1533,7 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 * 如果你把列表项提取出来作为一个组件，那么要把 key 使用在列表组件上，而不是 `<li>` 标签上。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * key 一个元素在集合中的稳定标识，并帮助 React 识别变化。
@@ -1550,24 +1541,24 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 * 如果你把列表项提取出来成为组件，你应该将 key 应用在组件上，而不是 `<li>` 元素上。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：列表和 Key](https://reactjs.org/docs/lists-and-keys.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between lexical scoping and dynamic scoping?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Lexical scoping refers to when the location of a function's definition determines which variables you have access to. On the other hand, dynamic scoping uses the location of the function's invocation to determine which variables are available.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Lexical scoping is also known as static scoping.
@@ -1575,14 +1566,14 @@ Lexical scoping refers to when the location of a function's definition determine
 * Most languages use lexical scoping because it tends to promote source code that is more easily understood.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Mozilla Docs Closures & Lexical Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Create a function that masks a string of characters with `#` except for the last four (4) characters.
 
@@ -1591,7 +1582,7 @@ mask("123456789") // "#####6789"
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 > There are many ways to solve this problem, this is just one one of them.
 
@@ -1603,19 +1594,19 @@ const mask = (str, maskChar = "#") =>
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Short, one-line functional solutions to problems should be preferred provided they are efficient
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the output of the following code?
 
@@ -1629,12 +1620,12 @@ console.log(a == b)
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The first `console.log` outputs `true` because JavaScript's compiler performs type conversion and therefore it compares to strings by their value. On the other hand, the second `console.log` outputs `false` because Arrays are Objects and Objects are compared by reference.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * JavaScript performs automatic type conversion
@@ -1642,66 +1633,66 @@ The first `console.log` outputs `true` because JavaScript's compiler performs ty
 * Primitives are compared by value
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How does prototypal inheritance differ from classical inheritance?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 In the classical inheritance paradigm, object instances inherit their properties and functions from a class, which acts as a blueprint for the object. Object instances are typically created using a constructor and the `new` keyword.
 
 In the prototypal inheritance paradigm, object instances inherit directly from other objects and are typically created using factory functions or `Object.create()`.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is a MIME type and what is it used for?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 `MIME` is an acronym for `Multi-purpose Internet Mail Extensions`. It is used as a standard way of classifying file types over the Internet.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * A `MIME type` actually has two parts: a type and a subtype that are separated by a slash (/). For example, the `MIME type` for Microsoft Word files is `application/msword` (i.e., type is application and the subtype is msword).
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MIME Type MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are Promises?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The `Promise` object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
 An example can be the following snippet, which after 100ms prints out the result string to the standard output. Also, note the catch, which can be used for error handling. `Promise`s are chainable.
@@ -1717,30 +1708,30 @@ new Promise((resolve, reject) => {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Take a look into the other questions regarding `Promise`s!
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e772618)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are JavaScript data types?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The latest ECMAScript standard defines seven data types, six of them being primitive: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol` and one non-primitive data type: `Object`.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Mention of newly added `Symbol` data type
@@ -1748,7 +1739,7 @@ The latest ECMAScript standard defines seven data types, six of them being primi
 * Functions in JavaScript are objects with the capability of being callable
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
@@ -1756,7 +1747,7 @@ The latest ECMAScript standard defines seven data types, six of them being primi
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### NodeJS often uses a callback pattern where if an error is encountered during execution, this error is passed as the first argument to the callback. What are the advantages of this pattern?
 
@@ -1773,7 +1764,7 @@ fs.readFile(filePath, function(err, data) {
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Advantages include:
 
@@ -1815,13 +1806,13 @@ isTrue(true, callback)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * This is just a convention. However, you should stick to it.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [The Node.js Way Understanding Error-First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
@@ -1829,12 +1820,12 @@ isTrue(true, callback)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 什么是回调（Callback）？你可以举一个使用回调的例子吗？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 回调是作为参数传入其他函数的函数，并在一个事件发生或者特定的任务完成之后被调用，经常用于异步的代码。回调函数在之后被一段代码调用，但是可以在初始化阶段就声明而不必被调用。
 
@@ -1861,31 +1852,31 @@ map([1, 2, 3, 4, 5], n => n * 2) // [2, 4, 6, 8, 10]
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 函数在 JavaScript 中是一等公民（First-class objects）
 * 回调 vs Promise
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between `null` and `undefined`?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 In JavaScript, two values discretely represent nothing - `undefined` and `null`. The concrete difference between them is that `null` is explicit, while `undefined` is implicit. When a property does not exist or a variable has not been given a value, the value is `undefined`. `null` is set as the value to explicitly indicate “no value”. In essence, `undefined` is used when the nothing is not known, and `null` is used when the nothing is known.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `typeof undefined` evaluates to `"undefined"`.
@@ -1893,7 +1884,7 @@ In JavaScript, two values discretely represent nothing - `undefined` and `null`.
 * `undefined == null` evaluates to `true`.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
@@ -1901,12 +1892,12 @@ In JavaScript, two values discretely represent nothing - `undefined` and `null`.
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Describe the different ways to create an object. When should certain ways be preferred over others?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 ##### Object literal
 
@@ -1983,25 +1974,25 @@ Object.create(personProto, {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Prototypes are objects that other objects inherit properties and methods from.
 * Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between a parameter and an argument?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Parameters are the variable names of the function definition, while arguments are the values given to a function when it is invoked.
 
@@ -2013,48 +2004,48 @@ myFunction("argument1", "argument2")
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `arguments` is an array-like object containing information about the arguments supplied to an invoked function.
 * `myFunction.length` describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Does JavaScript pass by value or by reference?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 JavaScript always passes by value. However, with objects, the value is a reference to the object.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Difference between pass-by-value and pass-by-reference
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How do you pass an argument to an event handler or callback?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 You can use an arrow function to wrap around an event handler and pass arguments, which is equivalent to calling `bind`:
 
@@ -2064,24 +2055,24 @@ You can use an arrow function to wrap around an event handler and pass arguments
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are fragments?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Fragments allow a React component to return multiple elements without a wrapper, by grouping the children without adding extra elements to the DOM. Fragments offer better performance, lower memory usage, a cleaner DOM and can help in dealing with certain CSS mechanisms (e.g. tables, Flexbox and Grid).
 
@@ -2109,20 +2100,20 @@ render() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Fragments group multiple elements returned from a component, without adding a DOM element around them.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Fragments](https://reactjs.org/docs/fragments.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Create a function `pipe` that performs left-to-right function composition by returning a function that accepts one argument.
 
@@ -2135,7 +2126,7 @@ res(3) // 19; addOne(double(square(3)))
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Gather all supplied arguments using the rest operator `...` and return a unary function that uses `Array.prototype.reduce()` to run the value through the series of functions before returning the final value.
 
@@ -2144,72 +2135,72 @@ const pipe = (...fns) => x => fns.reduce((v, fn) => fn(v), x)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Function composition is the process of combining two or more functions to produce a new function.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [What is function composition?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the event loop in Node.js?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The event loop handles all async callbacks. Callbacks are queued in a loop, while other code runs, and will run one by one when the response for each one has been received.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Node.js docs on event loop, timers and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the only value not equal to itself in JavaScript?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 `NaN` (Not-a-Number) is the only value not equal to itself when comparing with any of the comparison operators. `NaN` is often the result of meaningless math computations, so two `NaN` values make no sense to be considered equal.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * The difference between `isNaN()` and `Number.isNaN()`
 * `const isNaN = x => x !== x`
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for `NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Contrast mutable and immutable values, and mutating vs non-mutating methods.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The two terms can be contrasted as:
 
@@ -2230,25 +2221,25 @@ originalArray.concat(4) // returns a new array, does not mutate the original
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * List of mutating and non-mutating array methods
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Mutating vs non-mutating array methods](https://lorenstewart.me/2017/01/22/javascript-array-methods-mutating-vs-non-mutating/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 什么是大 O 符号？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 大 O 符号用于在计算机科学中描述一个算法的时间复杂度。最好的算法会执行得最快，并且拥有最低的复杂性。
 
@@ -2333,25 +2324,25 @@ const permutations = arr => {
 执行时间会增长地非常快，即使数组只增加了一个元素。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 当执行时间呈指数增长时，要小心嵌套循环。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [JavaScript 的大 O 符号](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is a pure function?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 A pure function is a function that satisfies these two conditions:
 
@@ -2377,7 +2368,7 @@ const c = arr => arr.sort((a, b) => a - b)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Pure functions are easier to reason about due to their reliability.
@@ -2385,19 +2376,19 @@ const c = arr => arr.sort((a, b) => a - b)
 * If a function does not return a value, it is an indication that it is causing side effects.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Pure functions in JavaScript](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is recursion and when is it useful?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Recursion is the repeated application of a process. In JavaScript, recursion involves functions that call themselves repeatedly until they reach a base condition. The base condition breaks out of the recursion loop because otherwise the function would call itself indefinitely. Recursion is very useful when working with data structures that contain nesting where the number of levels deep is unknown.
 
@@ -2430,26 +2421,26 @@ nest(comments)
 In the above example, the base condition is met if `filter()` returns an empty array. The chained `map()` won't invoke the callback function which contains the recursive call, thereby breaking the loop.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Recursion is useful when working with data structures containing an unknown number of nested structures.
 * Recursion must have a base condition to be met that breaks out of the loop or it will call itself indefinitely.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [In plain English, what is recursion?](https://softwareengineering.stackexchange.com/questions/25052/in-plain-english-what-is-recursion)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is memoization?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Memoization is the process of caching the output of function calls so that subsequent calls are faster. Calling the function again with the same input will return the cached output without needing to do the calculation again.
 
@@ -2469,7 +2460,7 @@ const memoize = fn => {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * The above technique returns a unary function even if the function can take multiple arguments.
@@ -2477,19 +2468,19 @@ const memoize = fn => {
 * Memoization increases performance on subsequent function calls but still needs to do work on the first call.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Implementing memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are refs in React? When should they be used?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Refs provide a way to access DOM nodes or React elements created in the render method. Refs should be used sparringly, but there are some good use cases for refs, such as:
 
@@ -2515,7 +2506,7 @@ class MyComponent extends React.Component {
 Refs can also be used in functional components with the help of closures.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Refs are used to return a reference to an element.
@@ -2523,19 +2514,19 @@ Refs can also be used in functional components with the help of closures.
 * You can create a ref using `React.createRef()` and attach to elements via the `ref` attribute.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Explain the differences between imperative and declarative programming.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 These two types of programming can roughly be summarized as:
 
@@ -2568,31 +2559,31 @@ const numbersDoubled = numbers.map(n => n * 2)
 We declare that the new array is mapped to a new one where each value is doubled.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Declarative programming often works with functions and expressions. Imperative programming frequently uses statements and relies on low-level features that cause mutations, while declarative programming has a strong focus on abstraction and purity.
 * Declarative programming is more terse and easier to process at a glance.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Declarative vs Imperative Programming](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is functional programming?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Functional programming is a paradigm in which programs are built in a declarative manner using pure functions that avoid shared state and mutable data. Functions that always return the same value for the same input and don't produce side effects are the pillar of functional programming. Many programmers consider this to be the best approach to software development as it reduces bugs and cognitive load.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Cleaner, more concise development experience
@@ -2601,7 +2592,7 @@ Functional programming is a paradigm in which programs are built in a declarativ
 * JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
@@ -2609,12 +2600,12 @@ Functional programming is a paradigm in which programs are built in a declarativ
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are portals in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Portal are the recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
@@ -2625,28 +2616,28 @@ ReactDOM.createPortal(child, container)
 The first argument (`child`) is any renderable React child, such as an element, string, or fragment. The second argument (`container`) is a DOM element.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Portals](https://reactjs.org/docs/portals.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is event-driven programming?
+### 什么是事件驱动编程？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it.
+时间驱动编程是一种范式，它涉及到构建一个发送和接收事件的应用。当程序发送事件的时候，程序会通过执行所有注册在这个事件上的回调函数，并将相关数据传入该函数。使用这种模式，即便没有函数订阅该事件，也可以将事件释放到外部而不引发错误。
 
-A common example of this is the pattern of elements listening to DOM events such as `click` and `mouseenter`, where a callback function is run when the event occurs.
+一个通常的例子是，元素监听 DOM 事件，比如 `click` 和 `mouseenter`，当事件发生时，回调函数会被运行。
 
 ```js
 document.addEventListener("click", function(event) {
@@ -2655,7 +2646,7 @@ document.addEventListener("click", function(event) {
 })
 ```
 
-Without the context of the DOM, the pattern may look like this:
+在没有 DOM 上下文（context）的情况下，该模式可能是这样的：
 
 ```js
 const hub = createEventHub()
@@ -2668,59 +2659,59 @@ hub.emit("message", {
 })
 ```
 
-With this implementation, `on` is the way to _subscribe_ to an event, while `emit` is the way to _publish_ the event.
+在这种实现中，`on` 是*订阅*一个事件的方法，`emit` 是*发布*一个事件的方法。
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Follows a publish-subscribe pattern.
-* Responds to events that occur by running any callback functions subscribed to the event.
-* Show how to create a simple pub-sub implementation with JavaScript.
+* 遵循发布-订阅（publish-subscribe）模式。
+* 通过执行所有订阅该事件的回调函数来响应该事件。
+* 展示如何用 JavaScript 创建一个简单的发布-订阅模式。
 
 
-##### Additional Links
+##### 相关链接
 
 
-* [MDN docs on Events and Handlers](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)
-* [Understanding Node.js event-driven architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
+* [MDN 文档：事件和处理器](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)
+* [理解 Node.js 的事件驱动（event-driven）架构](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is context?
+### 什么是上下文（Context）？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.
+上下文提供了一种通过组件树传递数据的方式，而不需要手动地在每层把参数传递下去。比如，授权的用户、语言信息、UI 主题这些需要被应用中的很多组件获取的数据。
 
 ```js
 const { Provider, Consumer } = React.createContext(defaultValue)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Context provides a way to pass data through a tree of React components, without having to manually pass props.
-* Context is designed to share data that is considered _global_ for a tree of React components.
+* 上下文提供了一个在 React 组件树中传递数据的方式，而不需要手动地传递参数。
+* 上下文被设计用来在 React 组件树中共享可以被视为*全局*的数据。
 
 
-##### Additional Links
+##### 相关链接
 
 
-* [React docs on Context](https://reactjs.org/docs/context.html)
+* [React 文档：上下文](https://reactjs.org/docs/context.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Explain the difference between a static method and an instance method.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Static methods belong to a class and don't act on instances, while instance methods belong to the class prototype which is inherited by all instances of the class and acts on them.
 
@@ -2740,60 +2731,60 @@ Array.push(arr, 4)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * How to create static and instance methods with ES2015 class syntax
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is a closure? Can you give a useful example of one?
+### 闭包（closure）是什么？你可以给一个有用的例子嘛？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-A closure is a function defined inside another function and has access to its lexical scope even when it is executing outside its lexical scope. The closure has access to variables in three scopes:
+闭包是一个定义在其他函数里面的函数，并且有权访问其词法作用域（lexical scope）—— 甚至于当它在运行在其词法作用域以外的时候。闭包有权访问以下三个作用域的变量：
 
-* Variables declared in its own scope
-* Variables declared in the scope of the parent function
-* Variables declared in the global scope
+* 定义在其自身作用域的变量
+* 定义在其父函数作用域的变量
+* 定义在全局作用域的变量
 
-In JavaScript, all functions are closures because they have access to the outer scope, but most functions don't utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.
+在 JavaScript，所有的函数都是闭包，因为他们有权限访问外部的作用域，但是大部分函数没有充分利用闭包的特性：状态保存。这也是为什么闭包有时候被称为状态函数（stateful function）
 
-In addition, closures are the only way to store private data that can't be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user's own code.
-
-
-#### Good to hear
+另外，闭包也是 JavaScript 里面唯一的保存外部无法访问的私有数据的方式。这是 UMD（Universal Module Definition）模式的关键，经常用于库里面，可以让库只暴露公开 API，但是让其实现细节（implementation detail）保持私密，避免了和其他库或者用户的代码的命名冲突。
 
 
-* Closures are useful because they let you associate data with a function that operates on that data.
-* A closure can substitute an object with only a single method.
-* Closures can be used to emulate private properties and methods.
+#### 加分回答
 
 
-##### Additional Links
+* 闭包非常有用，因为它允许你将数据和操作该数据的函数关联起来。
+* 一个闭包可以用一个函数替代一个对象。
+* 闭包可以用于模拟私有属性和方法。
+
+
+##### 相关链接
 
 
 * [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-* [What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
-* [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+* [什么是闭包](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
+* [我从未理解 JavaScript 的闭包](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the `this` keyword and how does it work?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The `this` keyword is an object that represents the context of an executing function. Regular functions can have their `this` value changed with the methods `call()`, `apply()` and `bind()`. Arrow functions implicitly bind `this` so that it refers to the context of its lexical environment, regardless of whether or not its context is set explicitly with `call()`.
 
@@ -2883,7 +2874,7 @@ obj.doubleArr() // Uncaught TypeError: this.double is not a function
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
@@ -2892,21 +2883,21 @@ obj.doubleArr() // Uncaught TypeError: this.double is not a function
 * If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [`this` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is the `children` prop?
+### `children` 参数是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-`children` is part of the props object passed to components that allows components to be passed as data to other components, providing the ability to compose components cleanly. There are a number of methods available in the React API to work with this prop, such as `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only` and `React.Children.toArray`. A simple usage example of the children prop is as follows:
+`children` 是传递给组件的参数对象的一部分，它允许组件可以像数据一样被传递给其他组件，这提供了一种更干净的组合（compose）的方式。React API 中有很多方法可以用于这个参数，比如 `React.Children.map`、`React.Children.forEach`、`React.Children.only`、`React.Childnren.toArray`. 一个简单的子元素参数的例子如下：
 
 ```js
 function GenericBox({ children }) {
@@ -2923,31 +2914,31 @@ function App() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Children is a prop that allows components to be passed as data to other components.
-* The React API provides methods to work with this prop.
+* 子元素（Children）是一个允许组件像数据一样被传递给其他组件的参数。
+* React API 提供了使用这个属性的方法。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### Which is the preferred option between callback refs and findDOMNode()?
+### 回调引用（callback refs） 和 findDOMNode()，哪个更好？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.
+回调引用优于 `findDOMNode())` API，这是因为 `findDOMNode()` 影响了 React 未来的一些改进。
 
 ```js
-// Legacy approach using findDOMNode()
+// 之前使用 `findDOMNode()` 的方式。
 class MyComponent extends Component {
   componentDidMount() {
     findDOMNode(this).scrollIntoView()
@@ -2958,7 +2949,7 @@ class MyComponent extends Component {
   }
 }
 
-// Recommended approach using callback refs
+// 推荐使用回调引用的方式。
 class MyComponent extends Component {
   componentDidMount() {
     this.node.scrollIntoView()
@@ -2971,25 +2962,25 @@ class MyComponent extends Component {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Callback refs are preferred over `findDOMNode()`.
+* 更推荐使用回调引用而不是 `findDOMNode()`。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the purpose of JavaScript UI libraries/frameworks like React, Vue, Angular, Hyperapp, etc?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The main purpose is to avoid manipulating the DOM directly and keep the state of an application
 in sync with the UI easily. Additionally, they provide the ability to create components that can be reused when they have similar functionality with minor differences, avoiding duplication which would require multiple changes whenever the structure of a component which is reused in multiple places needs to be updated.
@@ -2997,26 +2988,26 @@ in sync with the UI easily. Additionally, they provide the ability to create com
 When working with DOM manipulation libraries like jQuery, the data of an application is generally kept in the DOM itself, often as class names or `data` attributes. Manipulating the DOM to update the UI involves many extra steps and can introduce subtle bugs over time. Keeping the state separate and letting a framework handle the UI updates when the state changes reduces cognitive load. Saying you want the UI to look a certain way when the state is a certain value is the declarative way of creating an application, instead of the imperative way of manually updating the UI to reflect the new state.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
 * JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What does `'use strict'` do and what are some of the key benefits to using it?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Including `'use strict'` at the beginning of your JavaScript source file enables strict mode, which enforces more strict parsing and error handling of JavaScript code. It is considered a good practice and offers a lot of benefits, such as:
 
@@ -3028,7 +3019,7 @@ Including `'use strict'` at the beginning of your JavaScript source file enables
 * Helps make JavaScript more secure.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
@@ -3036,16 +3027,16 @@ Including `'use strict'` at the beginning of your JavaScript source file enables
 * Prohibits some syntax likely to be defined in future versions of ECMAScript
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### How can you avoid callback hells?
+### 如何避免回调地狱？
 
 ```js
 getData(function(a) {
@@ -3062,11 +3053,11 @@ getData(function(a) {
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Refactoring the functions to return promises and using `async/await` is usually the best option. Instead of supplying the functions with callbacks that cause deep nesting, they return a promise that can be `await`ed and will be resolved once the data has arrived, allowing the next line of code to be evaluated in a sync-like fashion.
+一般最好的方式是用 `async/await` 将函数重构，使其返回一个 promise。相比较于给函数传递一个回调而造成深层的嵌套，这种方式可以返回一个可以用于 `await` 的 promise，并且可以在数据一返回就被处理，而下一行代码也可以以一种类似同步（sync-like）的方式执行。
 
-The above code can be restructured like so:
+上面的代码可以被重构如下：
 
 ```js
 async function asyncAwaitVersion() {
@@ -3079,34 +3070,34 @@ async function asyncAwaitVersion() {
 }
 ```
 
-There are lots of ways to solve the issue of callback hells:
+有很多可以解决回调地狱的方法：
 
-* Modularization: break callbacks into independent functions
-* Use a control flow library, like async
-* Use generators with Promises
-* Use async/await (from v7 on)
-
-
-#### Good to hear
+* 模块化（Modularization）：将回调拆分成独立的函数。
+* 使用一个流程控制库，比如 async。
+* 搭配 generator 使用 promise。
+* 使用 async/await （node v7 以上）。
 
 
-* As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows.
+#### 加分回答
 
 
-##### Additional Links
+* 作为一个高效的 JavaScript 开发者，你必须要避免不断增长的缩进级别，要书写干净且可读的代码，并且可以处理复杂的流程。
 
 
-* [Avoiding Callback Hell in Node.js](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
-* [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
+##### 相关链接
+
+
+* [避免 Node.js 中的回调地狱](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
+* [异步 JavaScript：从 Callback 到 Async、Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is a virtual DOM and why is it used in libraries/frameworks?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The virtual DOM (VDOM) is a representation of the real DOM in the form of plain JavaScript objects. These objects have properties to describe the real DOM nodes they represent: the node name, its attributes, and child nodes.
 
@@ -3149,25 +3140,25 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Why accessing the DOM can be so costly.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How do you ensure methods have the correct `this` context in React component classes?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 In JavaScript classes, the methods are not bound by default. This means that their `this` context can be changed (in the case of an event handler, to the element that is listening to the event) and will not refer to the component instance. To solve this, `Function.prototype.bind()` can be used to enforce the `this` context as the component instance.
 
@@ -3207,13 +3198,13 @@ render() {
 Note that extra re-rendering can occur using this technique because a new function reference is created on render, which gets passed down to child components and breaks `shouldComponentUpdate` / `PureComponent` shallow equality checks to prevent unnecessary re-renders. In cases where performance is important, it is preferred to go with `bind` in the constructor, or the public class fields syntax approach, because the function reference remains constant.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
@@ -3221,19 +3212,19 @@ Note that extra re-rendering can occur using this technique because a new functi
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## React
 ### 无状态组件是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 无状态组件的行为不依赖于自身的状态。无状态组件可以是函数组件或者类组件。无状态函数组件更方便维护和测试，因为他们会保证在相同的参数下生成相同的输出。在没有用到生命周期钩子（Hooks）的情况下，应该优先使用无状态函数组件。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 无状态组件独立于他们的状态。
@@ -3241,19 +3232,19 @@ Note that extra re-rendering can occur using this technique because a new functi
 * 无状态函数组件应该完全避免使用 `this` 关键词。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### React 中的有状态组件（Stateful Component）是什么意思？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 有状态组件是其行为依赖于状态的组件。这意味着，如果给一个组件的两个不同的实例以相同的参数，不一定会渲染出相同的结果，这一点不同于纯函数组件（Pure Function Component）。
 
@@ -3277,7 +3268,7 @@ function App() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 有状态组件具有它们依赖的内部状态。
@@ -3285,19 +3276,19 @@ function App() {
 * 有状态组件在他们的构造函数（constructor）里面或者用 `useState()` 来初始化状态。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档 状态和生命周期](https://reactjs.org/docs/state-and-lifecycle.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How do you write comments inside a JSX tree in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
@@ -3315,23 +3306,23 @@ const tree = (
 <!-- expertise: (0) -->
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### React 中元素（Element）和组件（Component）的区别是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 元素是一个纯 JavaScript 对象，代表了一个 DOM 节点或者组件。元素是纯粹的、不可变的，并且创建消耗低。
 
@@ -3344,14 +3335,14 @@ const domNodeElement = <div />
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 元素是不可变的纯对象，描述了你要创建的 DOM 节点或者组件。
 * 组件可以是类或者函数，接收参数并且返回元素树（Element Tree）
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
@@ -3359,33 +3350,33 @@ const domNodeElement = <div />
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What does lifting state up in React mean?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 When several components need to share the same data, then it is recommended to lift the shared state up to their closest common ancestor. For example, if two child components share the same data, it is recommended to move the shared state to parent instead of maintaining the local state in both child components.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Why does React use `className` instead of `class` like in HTML?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 React's philosophy in the beginning was to align with the browser DOM API rather than HTML, since that more closely represents how elements are created. Setting a `class` on an element meant using the `className` API:
 
@@ -3417,23 +3408,23 @@ const { class: className } = this.props // All good, but cumbersome!
 However, `class` _can_ be used as a prop without problems, as seen in other libraries like Preact. React currently allows you to use `class`, but will throw a warning and convert it to `className` under the hood. There is currently an open thread (as of January 2019) discussing changing `className` to `class` to reduce confusion.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How do you pass an argument to an event handler or callback?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 You can use an arrow function to wrap around an event handler and pass arguments, which is equivalent to calling `bind`:
 
@@ -3443,24 +3434,24 @@ You can use an arrow function to wrap around an event handler and pass arguments
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### `setState` 的回调函数（Callback function）参数有什么用？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 回调函数在 `setState` 执行完毕，并且组件渲染完毕之后调用。由于 `setState` 是异步的，回调函数可以用于任何 `setState` 调用完成之后的操作。
 
@@ -3471,26 +3462,26 @@ setState({ name: "sudheer" }, () => {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 回调函数在 `setState` 执行完之后调用，并且可以用于任何之后的操作。
 * 推荐使用生命周期函数，而不是回调函数。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on `setState`](https://reactjs.org/docs/react-component.html#setstate)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are the different phases of the component lifecycle in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 There are four different phases of component’s lifecycle:
 
@@ -3507,23 +3498,23 @@ There are four different phases of component’s lifecycle:
 <img alt="lifecycle phases" src="https://pbs.twimg.com/media/DZ-97vzW4AAbcZj.jpg:large" style="width: 100%"/>
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### HTML 和 React 的事件处理有什么区别？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 在 HTML 里面，参数名全部是小写的，通过提供一个字符串用来调用一个已经定义好的函数：
 
@@ -3551,25 +3542,25 @@ function handleClick(e) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * HTML 使用小写，React 使用驼峰。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：事件处理](https://reactjs.org/docs/handling-events.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### 什么是内联条件表达式（Inline condition expression）？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 由于 JSX 元素树是一个大的表达式，你无法在其中嵌入语句（Statement）。在树里面，条件表达式可以用于替代语句。
 
@@ -3611,24 +3602,24 @@ function App({ messages, isVisible }) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：条件渲染](https://reactjs.org/docs/conditional-rendering.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are the lifecycle methods in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 `getDerivedStateFromProps`: Executed before rendering on the initial mount and all component updates. Used to update the state based on changes in props over time. Has rare use cases, like tracking component animations during the lifecycle. There are only few cases where this makes sense to use over other lifecycle methods. It expects to return an object that will be the the new state, or null to update nothing. This method does not have access to the component instance either.
 
@@ -3645,23 +3636,23 @@ function App({ messages, isVisible }) {
 `componentDidCatch`: Used in error boundaries, which are components that implement this method. It allows the component to catch JavaScript errors anywhere in the _child_ component tree (below this component), log errors, and display a UI with error information.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Key 是什么？在列表里面使用它有什么好处？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Key 是一种特殊的字符串属性，帮助 React 识别哪个元素改变、增加或者移除了。它们用于渲染数组时给它们一个稳定的标识。每一个元素的 key 都应该是独一无二的（比如数据中的 ID，或者最起码需要是序号）。
 
@@ -3673,7 +3664,7 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 * 如果你把列表项提取出来作为一个组件，那么要把 key 使用在列表组件上，而不是 `<li>` 标签上。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * key 一个元素在集合中的稳定标识，并帮助 React 识别变化。
@@ -3681,24 +3672,24 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 * 如果你把列表项提取出来成为组件，你应该将 key 应用在组件上，而不是 `<li>` 元素上。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：列表和 Key](https://reactjs.org/docs/lists-and-keys.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### Which is the preferred option between callback refs and findDOMNode()?
+### 回调引用（callback refs） 和 findDOMNode()，哪个更好？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.
+回调引用优于 `findDOMNode())` API，这是因为 `findDOMNode()` 影响了 React 未来的一些改进。
 
 ```js
-// Legacy approach using findDOMNode()
+// 之前使用 `findDOMNode()` 的方式。
 class MyComponent extends Component {
   componentDidMount() {
     findDOMNode(this).scrollIntoView()
@@ -3709,7 +3700,7 @@ class MyComponent extends Component {
   }
 }
 
-// Recommended approach using callback refs
+// 推荐使用回调引用的方式。
 class MyComponent extends Component {
   componentDidMount() {
     this.node.scrollIntoView()
@@ -3722,25 +3713,25 @@ class MyComponent extends Component {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Callback refs are preferred over `findDOMNode()`.
+* 更推荐使用回调引用而不是 `findDOMNode()`。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are fragments?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Fragments allow a React component to return multiple elements without a wrapper, by grouping the children without adding extra elements to the DOM. Fragments offer better performance, lower memory usage, a cleaner DOM and can help in dealing with certain CSS mechanisms (e.g. tables, Flexbox and Grid).
 
@@ -3768,25 +3759,25 @@ render() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Fragments group multiple elements returned from a component, without adding a DOM element around them.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Fragments](https://reactjs.org/docs/fragments.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How do you ensure methods have the correct `this` context in React component classes?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 In JavaScript classes, the methods are not bound by default. This means that their `this` context can be changed (in the case of an event handler, to the element that is listening to the event) and will not refer to the component instance. To solve this, `Function.prototype.bind()` can be used to enforce the `this` context as the component instance.
 
@@ -3826,13 +3817,13 @@ render() {
 Note that extra re-rendering can occur using this technique because a new function reference is created on render, which gets passed down to child components and breaks `shouldComponentUpdate` / `PureComponent` shallow equality checks to prevent unnecessary re-renders. In cases where performance is important, it is preferred to go with `bind` in the constructor, or the public class fields syntax approach, because the function reference remains constant.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
@@ -3840,12 +3831,12 @@ Note that extra re-rendering can occur using this technique because a new functi
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are error boundaries in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
 
@@ -3876,23 +3867,23 @@ class ErrorBoundary extends React.Component {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are higher-order components?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React’s compositional nature. Higher-order components are like **pure components** because they accept any dynamically provided child component, but they won’t modify or copy any behavior from their input components.
 
@@ -3901,24 +3892,24 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### How to apply prop validation in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 When the application is running in development mode, React will automatically check for all props that we set on components to make sure they are the correct data type. For incorrect data types, it will generate warning messages in the console for development mode. They are stripped in production mode due to their performance impact. Required props are defined with `isRequired`.
 
@@ -3943,53 +3934,53 @@ class User extends React.Component {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * We can define custom `propTypes`
 * Using `propTypes` is not mandatory. However, it is a good practice and can reduce bugs.
 
 
-##### Additional Links
+##### 相关链接
 
 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is context?
+### 什么是上下文（Context）？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.
+上下文提供了一种通过组件树传递数据的方式，而不需要手动地在每层把参数传递下去。比如，授权的用户、语言信息、UI 主题这些需要被应用中的很多组件获取的数据。
 
 ```js
 const { Provider, Consumer } = React.createContext(defaultValue)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Context provides a way to pass data through a tree of React components, without having to manually pass props.
-* Context is designed to share data that is considered _global_ for a tree of React components.
+* 上下文提供了一个在 React 组件树中传递数据的方式，而不需要手动地传递参数。
+* 上下文被设计用来在 React 组件树中共享可以被视为*全局*的数据。
 
 
-##### Additional Links
+##### 相关链接
 
 
-* [React docs on Context](https://reactjs.org/docs/context.html)
+* [React 文档：上下文](https://reactjs.org/docs/context.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are refs in React? When should they be used?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Refs provide a way to access DOM nodes or React elements created in the render method. Refs should be used sparringly, but there are some good use cases for refs, such as:
 
@@ -4015,7 +4006,7 @@ class MyComponent extends React.Component {
 Refs can also be used in functional components with the help of closures.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Refs are used to return a reference to an element.
@@ -4023,21 +4014,21 @@ Refs can also be used in functional components with the help of closures.
 * You can create a ref using `React.createRef()` and attach to elements via the `ref` attribute.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### What is the `children` prop?
+### `children` 参数是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-`children` is part of the props object passed to components that allows components to be passed as data to other components, providing the ability to compose components cleanly. There are a number of methods available in the React API to work with this prop, such as `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only` and `React.Children.toArray`. A simple usage example of the children prop is as follows:
+`children` 是传递给组件的参数对象的一部分，它允许组件可以像数据一样被传递给其他组件，这提供了一种更干净的组合（compose）的方式。React API 中有很多方法可以用于这个参数，比如 `React.Children.map`、`React.Children.forEach`、`React.Children.only`、`React.Childnren.toArray`. 一个简单的子元素参数的例子如下：
 
 ```js
 function GenericBox({ children }) {
@@ -4054,26 +4045,26 @@ function App() {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
-* Children is a prop that allows components to be passed as data to other components.
-* The React API provides methods to work with this prop.
+* 子元素（Children）是一个允许组件像数据一样被传递给其他组件的参数。
+* React API 提供了使用这个属性的方法。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are portals in React?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Portal are the recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
@@ -4084,31 +4075,31 @@ ReactDOM.createPortal(child, container)
 The first argument (`child`) is any renderable React child, such as an element, string, or fragment. The second argument (`container`) is a DOM element.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React docs on Portals](https://reactjs.org/docs/portals.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## HTML
 ### `image` 标签里面的 `alt` 属性有什么用？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 如果用户无法查看图片，`alt` 属性可以为其提供了替代的信息。除了装饰性的图片，所有的图片都应该有 `alt` 属性来描述。装饰性图片的 `alt` 属性应该留空。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 装饰性的图片的 `alt` 属性应该留空。
@@ -4116,19 +4107,19 @@ The first argument (`child`) is any renderable React child, such as an element, 
 * 在 `alt` 属性末尾加 '.' 来改善网页可访问性(Accessibility)
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [为可访问性提供一个良好的基础](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility/HTML:%E4%B8%BA%E5%8F%AF%E8%AE%BF%E9%97%AE%E6%80%A7%E6%8F%90%E4%BE%9B%E4%B8%80%E4%B8%AA%E8%89%AF%E5%A5%BD%E7%9A%84%E5%9F%BA%E7%A1%80)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the purpose of cache busting and how can you achieve it?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Browsers have a cache to temporarily store files on websites so they don't need to be re-downloaded again when switching between pages or reloading the same page. The server is set up to send headers that tell the browser to store the file for a given amount of time. This greatly increases website speed and preserves bandwidth.
 
@@ -4143,47 +4134,47 @@ A common technique to force the browser to re-download the file is to append a q
 The browser considers it a different file but prevents the need to change the file name.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Strategies for cache-busting CSS](https://css-tricks.com/strategies-for-cache-busting-css/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Can a web page contain multiple `<header>` elements? What about `<footer>` elements?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Yes to both. The W3 documents state that the tags represent the header(`<header>`) and footer(`<footer>`) areas of their nearest ancestor "section". So not only can the page `<body>` contain a header and a footer, but so can every `<article>` and `<section>` element.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * W3 recommends having as many as you want, but only 1 of each for each "section" of your page, i.e. body, section etc.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [StackOverflow Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Briefly describe the correct usage of the following HTML5 semantic elements: `<header>`, `<article>`,`<section>`, `<footer>`
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 * `<header>` is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author’s name, time and date of publication, table of contents, or other navigational information.
 
@@ -4194,37 +4185,37 @@ Yes to both. The W3 documents state that the tags represent the header(`<header>
 * `<footer>` is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author’s name, copyright information, and related links are typical examples of such content.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Other semantic elements are `<form>` and `<table>`
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [HTML 5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Where and why is the `rel="noopener"` attribute used?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It prevents pages from having a `window.opener` property, which would otherwise point to the page from where the link was opened and would allow the page opened from the hyperlink to manipulate the page where the hyperlink is.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `rel="noopener"` is applied to hyperlinks.
 * `rel="noopener"` prevents opened links from manipulating the source page.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Open external anchors using rel="noopener"](https://developers.google.com/web/tools/lighthouse/audits/noopener)
@@ -4232,12 +4223,12 @@ The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It pre
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### `<script>` 标签里面的 `defer` 和 `async` 属性是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 如果两个属性都没写，脚本（script）会被串行地下载并执行，并且会暂停对文档（document）的解析（parsing），直到脚本执行完毕（默认行为）。脚本会按照其出现的顺序来下载并执行。
 
@@ -4254,7 +4245,7 @@ The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It pre
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 在 `<head>` 里面放 `defer` 脚本，可以让浏览器在页面解析的同时下载脚本，因此相比于把脚本放在 body 末尾，这是一个更好的选择。
@@ -4263,19 +4254,19 @@ The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It pre
 * 如果 DOM 必须已经准备好并且脚本内容没有放在 `DOMContentLoaded` 监听器里面，使用 `defer`。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### HTML 和 React 的事件处理有什么区别？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 在 HTML 里面，参数名全部是小写的，通过提供一个字符串用来调用一个已经定义好的函数：
 
@@ -4303,25 +4294,25 @@ function handleClick(e) {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * HTML 使用小写，React 使用驼峰。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [React 文档：事件处理](https://reactjs.org/docs/handling-events.html)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are some differences that XHTML has compared to HTML?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Some of the key differences are:
 
@@ -4333,31 +4324,31 @@ Some of the key differences are:
 * Special characters must be escaped
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Any element can be self-closed
 * Tags ands attributes are case-sensitive, usually lowercase
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [W3Schools docs for HTML and XHTML](https://www.w3schools.com/html/html_xhtml.asp)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### DOM 是什么？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 DOM（文档对象模型，Document Object Model）是一个跨平台的 API，它将 HTML 和 XML 文档视为一个节点（node）组成的树形结构。这些节点（比如元素和文本节点）是可以被程序操作的对象，并且任何可见的变化都会实时反映到文档上。在一个浏览器中，JavaScript 可以用这个 API 操作 DOM 节点，改变它们的在文档中的样式、内容和位置，或者通过事件监听器与 DOM 交互。
 
 
-#### Good to hear
+#### 加分回答
 
 
 * DOM 被设计为独立于任何特定的编程语言，使得文档的结构可以从一个一致的 API 中获得。
@@ -4366,26 +4357,26 @@ DOM（文档对象模型，Document Object Model）是一个跨平台的 API，�
 * 当一个节点的 `innerHTML` 设置为一个新值时，HTML 解析器会解析该字符串。这是一种向向节点添加动态 HTML 的简单方式。
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for DOM](https://developer.mozilla.org/en-US/docs/DOM)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Discuss the differences between an HTML specification and a browser’s implementation thereof.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 HTML specifications such as `HTML5` define a set of rules that a document must adhere to in order to be “valid” according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.
 
 A browser is said to “support” a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the `HTML5` specification (although all of the major browser support most of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
@@ -4393,19 +4384,19 @@ A browser is said to “support” a specification if it handles valid documents
 * Thus, many decisions about how to handle malformed documents are left up to the browser.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is HTML5 Web Storage? Explain `localStorage` and `sessionStorage`.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 With HTML5, web pages can store data locally within the user’s browser.
 The data is stored in name/value pairs, and a web page can only access data stored by itself.
@@ -4422,7 +4413,7 @@ Both forms of storage are scoped to the document origin so that documents with d
 * Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Earlier, this was done with cookies.
@@ -4430,21 +4421,21 @@ Both forms of storage are scoped to the document origin so that documents with d
 * The data is never transferred to the server and can only be used if the client specifically asks for it.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [W3Schools HTML5 Webstorage](https://www.w3schools.com/html/html5_webstorage.asp)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## CSS
 ### 什么是 CSS BEM？
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 BEM 方法是一个 CSS class 命名约定，他通过定义命名空间（namespace）来解决作用域问题，从而使 CSS 更可维护。BEM 代表着 块 元素 修饰（Block Element Modifier），其名字也是也是其结构的解释。一个**块** 是一个单独的组件，可以跨项目使用，对其子组件（元素，Elements）起到命名空间的作用。**修饰**用于当块或者元素处于一个特定的状态，或者在结构、样式上有所不同的时候。
 
@@ -4486,44 +4477,44 @@ BEM 方法是一个 CSS class 命名约定，他通过定义命名空间（names
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * 作用域问题的可选的解决方案，比如 CSS-in-JS
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [编写干净、可维护的 CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are the advantages of using CSS preprocessors?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 CSS preprocessors add useful functionality that native CSS does not have, and generally make CSS neater and more maintainable by enabling DRY (Don't Repeat Yourself) principles. Their terse syntax for nested selectors cuts down on repeated code. They provide variables for consistent theming (however, CSS variables have largely replaced this functionality) and additional tools like color functions (`lighten`, `darken`, `transparentize`, etc), mixins, and loops that make CSS more like a real programming language and gives the developer more power to generate complex CSS.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * They allow us to write more maintainable and scalable CSS
 * Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [CSS Preprocessors](https://medium.com/@garyfagan/css-preprocessors-6f226fa16f27)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.
 
@@ -4536,7 +4527,7 @@ CSS preprocessors add useful functionality that native CSS does not have, and ge
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Set the `.row` parent to `display: flex;` and use the `flex` shorthand property to give the column classes a `flex-grow` value that corresponds to its ratio value.
 
@@ -4559,12 +4550,12 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
@@ -4572,12 +4563,12 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Can you name the four types of `@media` properties?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 * `all`, which applies to all media type devices
 * `print`, which only applies to printers
@@ -4585,12 +4576,12 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 * `speech`, which only applies to screenreaders
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [MDN docs for `@media` rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
@@ -4598,12 +4589,12 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Describe the layout of the CSS Box Model and briefly describe each component.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 <!-- Your answer goes here. -->
 
@@ -4618,14 +4609,14 @@ _Margin_: The transparent outer-most layer that surrounds the border. It separat
 ![alt text](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif)
 
 
-#### Good to hear
+#### 加分回答
 
 
 * This is a very common question asked during front-end interviews and while it may seem easy, it is critical you know it well!
 * Shows a solid understanding of spacing and the DOM
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [W3School's CSS Box Model Page](https://www.w3schools.com/Css/css_boxmodel.asp)
@@ -4633,12 +4624,12 @@ _Margin_: The transparent outer-most layer that surrounds the border. It separat
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between `em` and `rem` units?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Both `em` and `rem` units are based on the `font-size` CSS property. The only difference is where they inherit their values from.
 
@@ -4648,25 +4639,25 @@ Both `em` and `rem` units are based on the `font-size` CSS property. The only di
 In most browsers, the `font-size` of the root element is set to `16px` by default.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Benefits of using `em` and `rem` units
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [CSS units for font-size: px | em | rem](https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What are the advantages of using CSS sprites and how are they utilized?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 CSS sprites combine multiple images into one image, limiting the number of HTTP requests a browser has to make, thus improving load times. Even under the new HTTP/2 protocol, this remains true.
 
@@ -4677,25 +4668,25 @@ However, according to [benchmark results](https://blog.octo.com/en/http2-arrives
 To utilize a spritesheet in CSS, one would use certain properties, such as `background-image`, `background-position` and `background-size` to ultimately alter the `background` of an element.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the difference between '+' and '~' sibling selectors?.
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The General Sibling Selector `~` selects all elements that are siblings of a specified element.
 
@@ -4718,12 +4709,12 @@ div + p {
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [W3School's CSS Combinators Page](https://www.w3schools.com/css/css_combinators.asp)
@@ -4731,12 +4722,12 @@ div + p {
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### Can you describe how CSS specificity works?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Assuming the browser has already determined the set of rules for an element, each rule is assigned a matrix of values, which correspond to the following from highest to lowest specificity:
 
@@ -4748,26 +4739,26 @@ Assuming the browser has already determined the set of rules for an element, eac
 When two selectors are compared, the comparison is made on a per-column basis (e.g. an id selector will always be higher than any amount of class selectors, as ids have higher specificity than classes). In cases of equal specificity between multiple rules, the rules that comes last in the page's style sheet is deemed more specific and therefore applied to the element.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Specificity matrix: [inline, id, class/pseudo-class/attribute, tag/pseudo-element]
 * In cases of equal specificity, last rule is applied
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is a focus ring? What is the correct solution to handle them?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 A focus ring is a visible outline given to focusable elements such as buttons and anchor tags. It varies depending on the vendor, but generally it appears as a blue outline around the element to indicate it is currently focused.
 
@@ -4778,19 +4769,19 @@ In recent times, frameworks like Bootstrap have opted to use a more appealing `b
 The best solution is an upcoming pseudo-selector `:focus-visible` which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.
 
 
-#### Good to hear
+#### 加分回答
 
 
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## Node
@@ -4809,7 +4800,7 @@ fs.readFile(filePath, function(err, data) {
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 Advantages include:
 
@@ -4851,13 +4842,13 @@ isTrue(true, callback)
 ```
 
 
-#### Good to hear
+#### 加分回答
 
 
 * This is just a convention. However, you should stick to it.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [The Node.js Way Understanding Error-First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
@@ -4865,12 +4856,12 @@ isTrue(true, callback)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is REST?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 REST (REpresentational State Transfer) is a software design pattern for network architecture. A RESTful web application exposes data in the form of information about its resources.
 
@@ -4887,22 +4878,22 @@ Here is an example of the URL and HTTP method with a `posts` resource:
 * Destroying: `/posts/:id` => DELETE
 
 
-#### Good to hear
+#### 加分回答
 
 
 * Alternatives to this pattern like GraphQL
 
 
-##### Additional Links
+##### 相关链接
 
 
 *   ](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
-### How can you avoid callback hells?
+### 如何避免回调地狱？
 
 ```js
 getData(function(a) {
@@ -4919,11 +4910,11 @@ getData(function(a) {
 ```
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
-Refactoring the functions to return promises and using `async/await` is usually the best option. Instead of supplying the functions with callbacks that cause deep nesting, they return a promise that can be `await`ed and will be resolved once the data has arrived, allowing the next line of code to be evaluated in a sync-like fashion.
+一般最好的方式是用 `async/await` 将函数重构，使其返回一个 promise。相比较于给函数传递一个回调而造成深层的嵌套，这种方式可以返回一个可以用于 `await` 的 promise，并且可以在数据一返回就被处理，而下一行代码也可以以一种类似同步（sync-like）的方式执行。
 
-The above code can be restructured like so:
+上面的代码可以被重构如下：
 
 ```js
 async function asyncAwaitVersion() {
@@ -4936,59 +4927,59 @@ async function asyncAwaitVersion() {
 }
 ```
 
-There are lots of ways to solve the issue of callback hells:
+有很多可以解决回调地狱的方法：
 
-* Modularization: break callbacks into independent functions
-* Use a control flow library, like async
-* Use generators with Promises
-* Use async/await (from v7 on)
-
-
-#### Good to hear
+* 模块化（Modularization）：将回调拆分成独立的函数。
+* 使用一个流程控制库，比如 async。
+* 搭配 generator 使用 promise。
+* 使用 async/await （node v7 以上）。
 
 
-* As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows.
+#### 加分回答
 
 
-##### Additional Links
+* 作为一个高效的 JavaScript 开发者，你必须要避免不断增长的缩进级别，要书写干净且可读的代码，并且可以处理复杂的流程。
 
 
-* [Avoiding Callback Hell in Node.js](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
-* [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
+##### 相关链接
+
+
+* [避免 Node.js 中的回调地狱](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
+* [异步 JavaScript：从 Callback 到 Async、Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 ### What is the event loop in Node.js?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 The event loop handles all async callbacks. Callbacks are queued in a loop, while other code runs, and will run one by one when the response for each one has been received.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Node.js docs on event loop, timers and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## Security
 ### What is a cross-site scripting attack (XSS) and how do you prevent it?
 
 <details>
-<summary>View answer</summary>
+<summary>查看答案</summary>
 
 XSS refers to client-side code injection where the attacker injects malicious scripts into a legitimate website or web application. This is often achieved when the application does not validate user input and freely injects dynamic HTML content.
 
@@ -4999,21 +4990,21 @@ For example, a comment system will be at risk if it does not validate or escape 
 * The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
 
 
-#### Good to hear
+#### 加分回答
 
 
 * On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
 * On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won't execute the script.
 
 
-##### Additional Links
+##### 相关链接
 
 
 * [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
 </details>
 
-<br>[⬆ Back to top](#table-of-contents)
+<br>[⬆ 回到顶部](#内容)
 
 
 ## License

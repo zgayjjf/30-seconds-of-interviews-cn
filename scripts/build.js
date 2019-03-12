@@ -42,9 +42,9 @@ const detailsQuestion = (title, question) =>
   misc.collapsible(
     title,
     `${question.answer.toString()}\n\n${headers.h4(
-      "Good to hear"
+      "加分回答"
     )}\n\n${lists.ul(question.goodToHear)}\n${headers.h5(
-      "Additional Links"
+      "相关链接"
     )}\n\n${lists.ul(question.links)}`
   )
 
@@ -98,7 +98,7 @@ try {
   tags.forEach(tagKey => {
     const taggedQuestions = questionsInTag[tagKey]
     output += headers.h3(TAG_NAMES[tagKey])
-    output += detailsTOC("View contents", taggedQuestions)
+    output += detailsTOC("查看详情", taggedQuestions)
   })
 
   // delimeter after TOC
@@ -112,10 +112,10 @@ try {
     taggedQuestions.sort((q1, q2) => q1.expertise - q2.expertise)
     taggedQuestions.forEach(question => {
       output += headers.h3(question.question).trim()
-      output += detailsQuestion("View answer", question)
+      output += detailsQuestion("查看答案", question)
       output += `\n<br>${misc.link(
-        "⬆ Back to top",
-        misc.anchor("Table of Contents")
+        "⬆ 回到顶部",
+        misc.anchor("内容")
       )}\n\n`
     })
   })

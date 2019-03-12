@@ -137,14 +137,14 @@
   },
   {
     "name": "callback-hell.md",
-    "question": "How can you avoid callback hells?\n\n```js\ngetData(function(a) {\n  getMoreData(a, function(b) {\n    getMoreData(b, function(c) {\n      getMoreData(c, function(d) {\n        getMoreData(d, function(e) {\n          // ...\n        })\n      })\n    })\n  })\n})\n```",
-    "answer": "Refactoring the functions to return promises and using `async/await` is usually the best option. Instead of supplying the functions with callbacks that cause deep nesting, they return a promise that can be `await`ed and will be resolved once the data has arrived, allowing the next line of code to be evaluated in a sync-like fashion.\n\nThe above code can be restructured like so:\n\n```js\nasync function asyncAwaitVersion() {\n  const a = await getData()\n  const b = await getMoreData(a)\n  const c = await getMoreData(b)\n  const d = await getMoreData(c)\n  const e = await getMoreData(d)\n  // ...\n}\n```\n\nThere are lots of ways to solve the issue of callback hells:\n\n* Modularization: break callbacks into independent functions\n* Use a control flow library, like async\n* Use generators with Promises\n* Use async/await (from v7 on)",
+    "question": "如何避免回调地狱？\n\n```js\ngetData(function(a) {\n  getMoreData(a, function(b) {\n    getMoreData(b, function(c) {\n      getMoreData(c, function(d) {\n        getMoreData(d, function(e) {\n          // ...\n        })\n      })\n    })\n  })\n})\n```",
+    "answer": "一般最好的方式是用 `async/await` 将函数重构，使其返回一个 promise。相比较于给函数传递一个回调而造成深层的嵌套，这种方式可以返回一个可以用于 `await` 的 promise，并且可以在数据一返回就被处理，而下一行代码也可以以一种类似同步（sync-like）的方式执行。\n\n上面的代码可以被重构如下：\n\n```js\nasync function asyncAwaitVersion() {\n  const a = await getData()\n  const b = await getMoreData(a)\n  const c = await getMoreData(b)\n  const d = await getMoreData(c)\n  const e = await getMoreData(d)\n  // ...\n}\n```\n\n有很多可以解决回调地狱的方法：\n\n* 模块化（Modularization）：将回调拆分成独立的函数。\n* 使用一个流程控制库，比如 async。\n* 搭配 generator 使用 promise。\n* 使用 async/await （node v7 以上）。",
     "goodToHear": [
-      "As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows."
+      "作为一个高效的 JavaScript 开发者，你必须要避免不断增长的缩进级别，要书写干净且可读的代码，并且可以处理复杂的流程。"
     ],
     "links": [
-      "[Avoiding Callback Hell in Node.js](http://stackabuse.com/avoiding-callback-hell-in-node-js/)",
-      "[Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)"
+      "[避免 Node.js 中的回调地狱](http://stackabuse.com/avoiding-callback-hell-in-node-js/)",
+      "[异步 JavaScript：从 Callback 到 Async、Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)"
     ],
     "tags": [
       "node",
@@ -181,10 +181,10 @@
   },
   {
     "name": "callback-refs-vs-finddomnode.md",
-    "question": "Which is the preferred option between callback refs and findDOMNode()?",
-    "answer": "Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.\n\n```js\n// Legacy approach using findDOMNode()\nclass MyComponent extends Component {\n  componentDidMount() {\n    findDOMNode(this).scrollIntoView()\n  }\n\n  render() {\n    return <div />\n  }\n}\n\n// Recommended approach using callback refs\nclass MyComponent extends Component {\n  componentDidMount() {\n    this.node.scrollIntoView()\n  }\n\n  render() {\n    return <div ref={node => (this.node = node)} />\n  }\n}\n```",
+    "question": "回调引用（callback refs） 和 findDOMNode()，哪个更好？",
+    "answer": "回调引用优于 `findDOMNode())` API，这是因为 `findDOMNode()` 影响了 React 未来的一些改进。\n\n```js\n// 之前使用 `findDOMNode()` 的方式。\nclass MyComponent extends Component {\n  componentDidMount() {\n    findDOMNode(this).scrollIntoView()\n  }\n\n  render() {\n    return <div />\n  }\n}\n\n// 推荐使用回调引用的方式。\nclass MyComponent extends Component {\n  componentDidMount() {\n    this.node.scrollIntoView()\n  }\n\n  render() {\n    return <div ref={node => (this.node = node)} />\n  }\n}\n```",
     "goodToHear": [
-      "Callback refs are preferred over `findDOMNode()`."
+      "更推荐使用回调引用而不是 `findDOMNode()`。"
     ],
     "links": [
       "[React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components)"
@@ -196,7 +196,7 @@
     "expertise": 2,
     "questionCodeBlocks": [],
     "answerCodeBlocks": [
-      "```js\n// Legacy approach using findDOMNode()\nclass MyComponent extends Component {\n  componentDidMount() {\n    findDOMNode(this).scrollIntoView()\n  }\n\n  render() {\n    return <div />\n  }\n}\n\n// Recommended approach using callback refs\nclass MyComponent extends Component {\n  componentDidMount() {\n    this.node.scrollIntoView()\n  }\n\n  render() {\n    return <div ref={node => (this.node = node)} />\n  }\n}\n```"
+      "```js\n// 之前使用 `findDOMNode()` 的方式。\nclass MyComponent extends Component {\n  componentDidMount() {\n    findDOMNode(this).scrollIntoView()\n  }\n\n  render() {\n    return <div />\n  }\n}\n\n// 推荐使用回调引用的方式。\nclass MyComponent extends Component {\n  componentDidMount() {\n    this.node.scrollIntoView()\n  }\n\n  render() {\n    return <div ref={node => (this.node = node)} />\n  }\n}\n```"
     ]
   },
   {
@@ -222,11 +222,11 @@
   },
   {
     "name": "children-prop.md",
-    "question": "What is the `children` prop?",
-    "answer": "`children` is part of the props object passed to components that allows components to be passed as data to other components, providing the ability to compose components cleanly. There are a number of methods available in the React API to work with this prop, such as `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only` and `React.Children.toArray`. A simple usage example of the children prop is as follows:\n\n```js\nfunction GenericBox({ children }) {\n  return <div className=\"container\">{children}</div>\n}\n\nfunction App() {\n  return (\n    <GenericBox>\n      <span>Hello</span> <span>World</span>\n    </GenericBox>\n  )\n}\n```",
+    "question": "`children` 参数是什么？",
+    "answer": "`children` 是传递给组件的参数对象的一部分，它允许组件可以像数据一样被传递给其他组件，这提供了一种更干净的组合（compose）的方式。React API 中有很多方法可以用于这个参数，比如 `React.Children.map`、`React.Children.forEach`、`React.Children.only`、`React.Childnren.toArray`. 一个简单的子元素参数的例子如下：\n\n```js\nfunction GenericBox({ children }) {\n  return <div className=\"container\">{children}</div>\n}\n\nfunction App() {\n  return (\n    <GenericBox>\n      <span>Hello</span> <span>World</span>\n    </GenericBox>\n  )\n}\n```",
     "goodToHear": [
-      "Children is a prop that allows components to be passed as data to other components.",
-      "The React API provides methods to work with this prop."
+      "子元素（Children）是一个允许组件像数据一样被传递给其他组件的参数。",
+      "React API 提供了使用这个属性的方法。"
     ],
     "links": [
       "[React docs on Children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)"
@@ -281,17 +281,17 @@
   },
   {
     "name": "closures.md",
-    "question": "What is a closure? Can you give a useful example of one?",
-    "answer": "A closure is a function defined inside another function and has access to its lexical scope even when it is executing outside its lexical scope. The closure has access to variables in three scopes:\n\n* Variables declared in its own scope\n* Variables declared in the scope of the parent function\n* Variables declared in the global scope\n\nIn JavaScript, all functions are closures because they have access to the outer scope, but most functions don't utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.\n\nIn addition, closures are the only way to store private data that can't be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user's own code.",
+    "question": "闭包（closure）是什么？你可以给一个有用的例子嘛？",
+    "answer": "闭包是一个定义在其他函数里面的函数，并且有权访问其词法作用域（lexical scope）—— 甚至于当它在运行在其词法作用域以外的时候。闭包有权访问以下三个作用域的变量：\n\n* 定义在其自身作用域的变量\n* 定义在其父函数作用域的变量\n* 定义在全局作用域的变量\n\n在 JavaScript，所有的函数都是闭包，因为他们有权限访问外部的作用域，但是大部分函数没有充分利用闭包的特性：状态保存。这也是为什么闭包有时候被称为状态函数（stateful function）\n\n另外，闭包也是 JavaScript 里面唯一的保存外部无法访问的私有数据的方式。这是 UMD（Universal Module Definition）模式的关键，经常用于库里面，可以让库只暴露公开 API，但是让其实现细节（implementation detail）保持私密，避免了和其他库或者用户的代码的命名冲突。",
     "goodToHear": [
-      "Closures are useful because they let you associate data with a function that operates on that data.",
-      "A closure can substitute an object with only a single method.",
-      "Closures can be used to emulate private properties and methods."
+      "闭包非常有用，因为它允许你将数据和操作该数据的函数关联起来。",
+      "一个闭包可以用一个函数替代一个对象。",
+      "闭包可以用于模拟私有属性和方法。"
     ],
     "links": [
       "[MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
-      "[What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)",
-      "[I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)"
+      "[什么是闭包](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)",
+      "[我从未理解 JavaScript 的闭包](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)"
     ],
     "tags": [
       "javascript"
@@ -323,14 +323,14 @@
   },
   {
     "name": "context.md",
-    "question": "What is context?",
-    "answer": "Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.\n\n```js\nconst { Provider, Consumer } = React.createContext(defaultValue)\n```",
+    "question": "什么是上下文（Context）？",
+    "answer": "上下文提供了一种通过组件树传递数据的方式，而不需要手动地在每层把参数传递下去。比如，授权的用户、语言信息、UI 主题这些需要被应用中的很多组件获取的数据。\n\n```js\nconst { Provider, Consumer } = React.createContext(defaultValue)\n```",
     "goodToHear": [
-      "Context provides a way to pass data through a tree of React components, without having to manually pass props.",
-      "Context is designed to share data that is considered _global_ for a tree of React components."
+      "上下文提供了一个在 React 组件树中传递数据的方式，而不需要手动地传递参数。",
+      "上下文被设计用来在 React 组件树中共享可以被视为*全局*的数据。"
     ],
     "links": [
-      "[React docs on Context](https://reactjs.org/docs/context.html)"
+      "[React 文档：上下文](https://reactjs.org/docs/context.html)"
     ],
     "tags": [
       "react",
@@ -550,16 +550,16 @@
   },
   {
     "name": "event-driven-programming.md",
-    "question": "What is event-driven programming?",
-    "answer": "Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it.\n\nA common example of this is the pattern of elements listening to DOM events such as `click` and `mouseenter`, where a callback function is run when the event occurs.\n\n```js\ndocument.addEventListener(\"click\", function(event) {\n  // This callback function is run when the user\n  // clicks on the document.\n})\n```\n\nWithout the context of the DOM, the pattern may look like this:\n\n```js\nconst hub = createEventHub()\nhub.on(\"message\", function(data) {\n  console.log(`${data.username} said ${data.text}`)\n})\nhub.emit(\"message\", {\n  username: \"John\",\n  text: \"Hello?\"\n})\n```\n\nWith this implementation, `on` is the way to _subscribe_ to an event, while `emit` is the way to _publish_ the event.",
+    "question": "什么是事件驱动编程？",
+    "answer": "时间驱动编程是一种范式，它涉及到构建一个发送和接收事件的应用。当程序发送事件的时候，程序会通过执行所有注册在这个事件上的回调函数，并将相关数据传入该函数。使用这种模式，即便没有函数订阅该事件，也可以将事件释放到外部而不引发错误。\n\n一个通常的例子是，元素监听 DOM 事件，比如 `click` 和 `mouseenter`，当事件发生时，回调函数会被运行。\n\n```js\ndocument.addEventListener(\"click\", function(event) {\n  // This callback function is run when the user\n  // clicks on the document.\n})\n```\n\n在没有 DOM 上下文（context）的情况下，该模式可能是这样的：\n\n```js\nconst hub = createEventHub()\nhub.on(\"message\", function(data) {\n  console.log(`${data.username} said ${data.text}`)\n})\nhub.emit(\"message\", {\n  username: \"John\",\n  text: \"Hello?\"\n})\n```\n\n在这种实现中，`on` 是*订阅*一个事件的方法，`emit` 是*发布*一个事件的方法。",
     "goodToHear": [
-      "Follows a publish-subscribe pattern.",
-      "Responds to events that occur by running any callback functions subscribed to the event.",
-      "Show how to create a simple pub-sub implementation with JavaScript."
+      "遵循发布-订阅（publish-subscribe）模式。",
+      "通过执行所有订阅该事件的回调函数来响应该事件。",
+      "展示如何用 JavaScript 创建一个简单的发布-订阅模式。"
     ],
     "links": [
-      "[MDN docs on Events and Handlers](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)",
-      "[Understanding Node.js event-driven architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)"
+      "[MDN 文档：事件和处理器](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)",
+      "[理解 Node.js 的事件驱动（event-driven）架构](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)"
     ],
     "tags": [
       "javascript"
